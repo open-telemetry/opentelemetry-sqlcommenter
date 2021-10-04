@@ -1,4 +1,5 @@
-## sqlcommenter
+# opentelemetry-sqlcommenter
+SQLCommenter components for various languages
 
 [Documentation](https://google.github.io/sqlcommenter/)
 
