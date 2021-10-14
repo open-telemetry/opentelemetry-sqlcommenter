@@ -29,7 +29,7 @@ sqlcommenter-java can installed in a couple of ways:
 
 #### <a name="install-from-source"></a> From source
 
-Please visit [source page on Github](https://github.com/google/sqlcommenter/tree/master/java/sqlcommenter-java)
+Please visit [source page on Github](https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/java/sqlcommenter-java)
 
 #### Building it
 

@@ -77,7 +77,7 @@ To change which fields are included, set `Marginalia::Comment.components = [ :fi
 ### End to end example
 
 A Rails 6 [sqlcommenter_rails] demo is available at:
-https://github.com/google/sqlcommenter/tree/master/ruby/sqlcommenter-ruby/sqlcommenter_rails_demo
+https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/ruby/sqlcommenter-ruby/sqlcommenter_rails_demo
 
 The demo is a vanilla Rails API application with [sqlcommenter_rails] and
 OpenCensus enabled.
@@ -193,14 +193,14 @@ traceparent='00-ff19308b1f17fedc5864e929bed1f44e-6ddace73a9debf63-01'*/
 
 | Resource                | URL                                                                                             |
 |-------------------------|-------------------------------------------------------------------------------------------------|
-| [sqlcommenter_rails]    | https://github.com/google/sqlcommenter/tree/master/ruby/sqlcommenter-ruby/sqlcommenter_rails    |
+| [sqlcommenter_rails]    | https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/ruby/sqlcommenter-ruby/sqlcommenter_rails    |
 | [marginalia]            | https://github.com/basecamp/marginalia                                                          |
 | [OpenCensus]            | https://opencensus.io/                                                                          |
 | The [opencensus gem]    | https://github.com/census-instrumentation/opencensus-ruby                                       |
-| [marginalia-opencensus] | https://github.com/google/sqlcommenter/tree/master/ruby/sqlcommenter-ruby/marginalia-opencensus |
+| [marginalia-opencensus] | https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/ruby/sqlcommenter-ruby/marginalia-opencensus |
 
-[sqlcommenter_rails]: https://github.com/google/sqlcommenter/tree/master/ruby/sqlcommenter-ruby/sqlcommenter_rails
+[sqlcommenter_rails]: https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/ruby/sqlcommenter-ruby/sqlcommenter_rails
 [marginalia]: https://github.com/basecamp/marginalia
-[marginalia-opencensus]: https://github.com/google/sqlcommenter/tree/master/ruby/sqlcommenter-ruby/marginalia-opencensus
+[marginalia-opencensus]: https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/ruby/sqlcommenter-ruby/marginalia-opencensus
 [OpenCensus]: https://opencensus.io/
 [opencensus gem]: https://github.com/census-instrumentation/opencensus-ruby

@@ -64,7 +64,7 @@ import com.google.cloud.sqlcommenter.schhibernate.SCHibernate;
 
 ### Spring and JPA end-to-end example
 
-First thing you need to do is to download the [sqlcommenter-java-guides-spring-jpa](https://github.com/google/sqlcommenter/tree/master/java/sqlcommenter-java#spring)
+First thing you need to do is to download the [sqlcommenter-java-guides-spring-jpa](https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/java/sqlcommenter-java#spring)
 Java project.
 
 #### Source code
@@ -1138,4 +1138,4 @@ select post0_.id as id1_0_0_, post0_.title as title2_0_0_ from post post0_ where
 Resource|URL
 ---|---
 Hibernate ORM project|https://hibernate.org/orm/
-sqlcommenter-java on Github|https://github.com/google/sqlcommenter/tree/master/java/sqlcommenter-java
+sqlcommenter-java on Github|https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/java/sqlcommenter-java
