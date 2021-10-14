@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on opentelemetry-sqlcommenter</title>
+    <link>https://open-telemetry.github.io/opentelemetry-sqlcommenter/java/</link>
+    <description>Recent content in Java on opentelemetry-sqlcommenter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 May 2019 08:46:39 -0600</lastBuildDate><atom:link href="https://open-telemetry.github.io/opentelemetry-sqlcommenter/java/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

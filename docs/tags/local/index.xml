@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>local on opentelemetry-sqlcommenter</title>
+    <link>https://open-telemetry.github.io/opentelemetry-sqlcommenter/tags/local/</link>
+    <description>Recent content in local on opentelemetry-sqlcommenter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 May 2019 14:20:21 -0700</lastBuildDate><atom:link href="https://open-telemetry.github.io/opentelemetry-sqlcommenter/tags/local/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Locally</title>
+      <link>https://open-telemetry.github.io/opentelemetry-sqlcommenter/python/django/local/</link>
+      <pubDate>Fri, 31 May 2019 14:20:21 -0700</pubDate>
+      
+      <guid>https://open-telemetry.github.io/opentelemetry-sqlcommenter/python/django/local/</guid>
+      <description>Introduction Requirements Addition to your code References  Introduction This guide will help you add sqlcommenter to your Django applications running locally.
+Please see the reference for the fields added in the SQL comments google-cloud-sqlcommenter.Fields
+Requirements    Steps Resource     Django https://docs.djangoproject.com/en/stable/intro/   google-cloud-sqlcommenter https://pypi.org/project/google-cloud-sqlcommenter   Django 2.X https://docs.djangoproject.com/en/stable/faq/install   Python 3.X https://www.python.org/downloads/    Addition to your code Firstly, please install google-cloud-sqlcommenter.</description>
+    </item>
+    
+  </channel>
+</rss>

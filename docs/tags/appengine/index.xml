@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>appengine on opentelemetry-sqlcommenter</title>
+    <link>https://open-telemetry.github.io/opentelemetry-sqlcommenter/tags/appengine/</link>
+    <description>Recent content in appengine on opentelemetry-sqlcommenter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 May 2019 17:06:21 -0700</lastBuildDate><atom:link href="https://open-telemetry.github.io/opentelemetry-sqlcommenter/tags/appengine/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Cloud Platform</title>
+      <link>https://open-telemetry.github.io/opentelemetry-sqlcommenter/python/django/gcp/</link>
+      <pubDate>Wed, 29 May 2019 17:06:21 -0700</pubDate>
+      
+      <guid>https://open-telemetry.github.io/opentelemetry-sqlcommenter/python/django/gcp/</guid>
+      <description>Introduction Requirements Addition to your code References  Introduction This guide will help you add sqlcommenter to your Django applications running on Google Cloud Platform (GCP)
+Requirements    Steps Resource     Django on GCP https://cloud.google.com/python/django/   google-cloud-sqlcommenter https://pypi.org/project/google-cloud-sqlcommenter   Django 2.X https://docs.djangoproject.com/en/stable/faq/install   Python 3.X https://www.python.org/downloads/    Addition to your code Firstly, please install google-cloud-sqlcommenter.
+For any Django deployment, we can just edit our settings.</description>
+    </item>
+    
+  </channel>
+</rss>
