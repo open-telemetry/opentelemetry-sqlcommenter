@@ -94,4 +94,4 @@ We have tested the instrumentation on the following databases:
 {{<card-vendor href="https://cloud.google.com/sql/" src="/images/cloud-sql-card.png">}}
 
 ### Source code
-The project is hosted on [Github](https://github.com/google/sqlcommenter/)
+The project is hosted on [Github](https://github.com/open-telemetry/opentelemetry-sqlcommenter/)

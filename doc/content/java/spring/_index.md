@@ -178,6 +178,6 @@ public class JPAConfig {
 Resource|URL
 ---|---
 Spring framework homepage|https://spring.io/
-sqlcommenter-java on Github|https://github.com/google/sqlcommenter/tree/master/java/sqlcommenter-java
+sqlcommenter-java on Github|https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/java/sqlcommenter-java
 Spring Interceptor|https://docs.spring.io/spring/docs/5.0.4.BUILD-SNAPSHOT/javadoc-api/org/aopalliance/intercept/Interceptor.html
 Hibernate SQLCommenter integration|[/java/hibernate](/java/hibernate)

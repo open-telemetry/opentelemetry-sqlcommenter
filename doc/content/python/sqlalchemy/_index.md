@@ -40,7 +40,7 @@ pip3 install google-cloud-sqlcommenter
 {{</highlight>}}
 
 {{<highlight shell>}}
-git clone https://github.com/google/sqlcommenter.git
+git clone https://github.com/open-telemetry/opentelemetry-sqlcommenter.git
 cd python/sqlcommenter-python && python3 setup.py install
 {{</highlight>}}
 {{</tabs>}}
@@ -210,7 +210,7 @@ your web applications with your SQL statements from sqlalchemy. Please see this 
 Resource|URL
 ---|---
 sqlcommenter-sqlalchemy on PyPi|https://pypi.org/project/google-cloud-sqlcommenter
-sqlcommenter-sqlalchemy on Github|https://github.com/google/sqlcommenter
+sqlcommenter-sqlalchemy on Github|https://github.com/open-telemetry/opentelemetry-sqlcommenter
 OpenCensus|https://opencensus.io/
 OpenCensus SpanID|https://opencensus.io/tracing/span/spanid
 OpenCensus TraceID|https://opencensus.io/tracing/span/traceid

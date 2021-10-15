@@ -53,7 +53,7 @@ pip3 install google-cloud-sqlcommenter
 
 #### Source install
 {{<highlight shell>}}
-git clone https://github.com/google/sqlcommenter.git
+git clone https://github.com/open-telemetry/opentelemetry-sqlcommenter.git
 cd python/sqlcommenter-python && python3 setup.py install
 {{</highlight>}}
 
@@ -303,7 +303,7 @@ Resource|URL
 ---|---
 psycopg2 project|http://initd.org/psycopg/docs/index.html
 sqlcommenter-psycopg2 on PyPi|https://pypi.org/project/google-cloud-sqlcommenter
-sqlcommenter-psycopg2 on Github|https://github.com/google/sqlcommenter
+sqlcommenter-psycopg2 on Github|https://github.com/open-telemetry/opentelemetry-sqlcommenter
 OpenCensus|https://opencensus.io/
 OpenCensus SpanID|https://opencensus.io/tracing/span/spanid
 OpenCensus TraceID|https://opencensus.io/tracing/span/traceid

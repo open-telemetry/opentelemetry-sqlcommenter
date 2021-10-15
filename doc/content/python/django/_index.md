@@ -42,7 +42,7 @@ pip3 install google-cloud-sqlcommenter
 {{</highlight>}}
 
 {{<highlight shell>}}
-git clone https://github.com/google/sqlcommenter.git
+git clone https://github.com/open-telemetry/opentelemetry-sqlcommenter.git
 cd python/sqlcommenter-python && python3 setup.py install
 {{</highlight>}}
 
@@ -315,6 +315,6 @@ Resource|URL
 ---|---
 Django|https://www.djangoproject.com/
 OpenCensus|https://opencensus.io/
-opencensus-ext-django|https://github.com/census-instrumentation/opencensus-python/tree/master/contrib/opencensus-ext-django
+opencensus-ext-django|https://github.com/census-instrumentation/opencensus-python/tree/main/contrib/opencensus-ext-django
 sqlcommenter on PyPi|https://pypi.org/project/google-cloud-sqlcommenter
-sqlcommenter on Github|https://github.com/google/sqlcommenter
+sqlcommenter on Github|https://github.com/open-telemetry/opentelemetry-sqlcommenter

@@ -169,7 +169,7 @@ wrapMainKnexAsMiddleware(
 ### End to end examples
 
 Check out a full express + opentelemetry example
-[here](https://github.com/google/sqlcommenter/tree/master/nodejs/sqlcommenter-nodejs/samples/express-opentelemetry).
+[here](https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/nodejs/sqlcommenter-nodejs/samples/express-opentelemetry).
 
 #### Source code
 
