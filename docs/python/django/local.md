@@ -1,5 +1,5 @@
 # Locally
-![](/docs/images/locally.png)
+![](/docs/images/locally-logo.png)
 
 
 - [Locally](#locally)

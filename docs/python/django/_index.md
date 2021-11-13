@@ -1,4 +1,4 @@
-
+# Django
 ![](/docs/images/django-logo.png)
 
 <div class="row" >
@@ -37,25 +37,26 @@
 </style>
 
 
-- [Introduction](#introduction)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Enabling it](#enabling-it)
-- [Fields](#fields)
-- [Sample log entry](#sample-log-entry)
-  - [Expected Fields](#expected-fields)
-- [End to end examples](#end-to-end-examples)
-- [Source code](#source-code)
-  - [Defaults](#defaults)
-  - [With OpenCensus](#with-opencensus)
-  - [With App Name](#with-app-name)
-  - [With DB Driver](#with-db-driver)
-- [Results](#results)
-  - [Defaults](#defaults-1)
-  - [With OpenCensus](#with-opencensus-1)
-  - [With App Name](#with-app-name-1)
-  - [With DB Driver](#with-db-driver-1)
-- [References](#references)
+- [Django](#django)
+    - [Introduction](#introduction)
+    - [Requirements](#requirements)
+    - [Installation](#installation)
+    - [Enabling it](#enabling-it)
+    - [Fields](#fields)
+    - [Sample log entry](#sample-log-entry)
+      - [Expected Fields](#expected-fields)
+    - [End to end examples](#end-to-end-examples)
+    - [Source code](#source-code)
+      - [Defaults](#defaults)
+      - [With OpenCensus](#with-opencensus)
+      - [With App Name](#with-app-name)
+      - [With DB Driver](#with-db-driver)
+    - [Results](#results)
+      - [Defaults](#defaults-1)
+      - [With OpenCensus](#with-opencensus-1)
+      - [With App Name](#with-app-name-1)
+      - [With DB Driver](#with-db-driver-1)
+    - [References](#references)
 
 ### Introduction
 
@@ -138,7 +139,6 @@ Examples are based off the [polls app from the Django introduction tutorial](htt
 ### Source code
 
 #### Defaults
-<div>
 
 ```
 # settings.py
@@ -167,11 +167,9 @@ from .models import Question
 def index(request):
     count = Question.objects.count()
     return HttpResponse(f"There are {count} questions in the DB.\n")
-</div>
 ```
 #### With OpenCensus
 ```
-  <div>
 # settings.py
 INSTALLED_APPS = [
     'opencensus.ext.django',
@@ -215,11 +213,9 @@ from .models import Question
 def index(request):
     count = Question.objects.count()
     return HttpResponse(f"There are {count} questions in the DB.\n")
-</div>
 ```
 #### With App Name
 ```
-<div>
 # settings.py
 
 MIDDLEWARE = [
@@ -253,7 +249,6 @@ from .models import Question
 def index(request):
     count = Question.objects.count()
     return HttpResponse(f"There are {count} questions in the DB.\n")
-</div>
 ```
 #### With DB Driver
 ```
@@ -288,7 +283,6 @@ from .models import Question
 def index(request):
     count = Question.objects.count()
     return HttpResponse(f"There are {count} questions in the DB.\n")
-</div>
 ```
 From the command line, we run the django development server in one terminal:
 ```
