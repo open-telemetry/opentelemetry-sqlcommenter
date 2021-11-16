@@ -297,19 +297,26 @@ curl http://127.0.0.1:8000/polls/
 Examining our Postgresql server logs, with the various options
 
 #### Defaults
->2019-07-19 14:27:51.370 -03 [41382] LOG:  statement: SELECT COUNT(*) AS "__count" FROM "polls_question"
->/*controller='index',framework='django%3A2.2.3',route='polls/'*/
+```
+2019-07-19 14:27:51.370 -03 [41382] LOG:  statement: SELECT COUNT(*) AS "__count" FROM "polls_question"
+/*controller='index',framework='django%3A2.2.3',route='polls/'*/
+```
 #### With OpenCensus
->2019-07-19 17:39:27.430 -03 [46170] LOG:  statement: SELECT COUNT(*) AS "__count" FROM "polls_question"
->/*traceparent='00-fd720cffceba94bbf75940ff3caaf3cc-4fd1a2bdacf56388-01'*/
+```
+2019-07-19 17:39:27.430 -03 [46170] LOG:  statement: SELECT COUNT(*) AS "__count" FROM "polls_question"
+/*traceparent='00-fd720cffceba94bbf75940ff3caaf3cc-4fd1a2bdacf56388-01'*/
+```
 
 #### With App Name
->2019-07-19 15:31:33.681 -03 [42962] LOG:  statement: SELECT COUNT(*) AS "__count" FROM "polls_question"
->/*app_name='polls'*/
+```
+2019-07-19 15:31:33.681 -03 [42962] LOG:  statement: SELECT COUNT(*) AS "__count" FROM "polls_question"
+/*app_name='polls'*/
+```
 #### With DB Driver
->  2019-07-19 14:47:53.066 -03 [41602] LOG:  statement: SELECT COUNT(*) AS "__count" FROM "polls_question"
->/*db_driver='django.db.backends.postgresql'*/
-
+```
+2019-07-19 14:47:53.066 -03 [41602] LOG:  statement: SELECT COUNT(*) AS "__count" FROM "polls_question"
+/*db_driver='django.db.backends.postgresql'*/
+```
 ## References 
 
 | Resource               | URL                                                                                                   |

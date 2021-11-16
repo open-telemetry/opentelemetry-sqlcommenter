@@ -32,7 +32,7 @@
 
 ## Introduction
 
-This package is in the form of a [psycopg2 cursor factory](http://initd.org/psycopg/docs/advanced.html#connection-and-cursor-factories) whose purpose is to augment a SQL statement right before execution, with information about the [driver and user code]() to help correlate user code with executed SQL statements.
+This package is in the form of a [psycopg2 cursor factory](http://initd.org/psycopg/docs/advanced.html#connection-and-cursor-factories) whose purpose is to augment a SQL statement right before execution, with information about the driver and user code to help correlate user code with executed SQL statements.
 
 We provide a `CommenterCursorFactory` that takes options such as
 ```python
@@ -303,8 +303,7 @@ Examining our Postgresql server logs, with the various options
 ```
 
 ## With flask
-When coupled with the web framework [flask](http://flask.pocoo.org), we still provide middleware to correlate
-your web applications with your SQL statements from psycopg2. Please see this end-to-end guide below:
+When coupled with the web framework [flask](http://flask.pocoo.org), we still provide middleware to correlate your web applications with your SQL statements from psycopg2. Please see this end-to-end guide below:<br>
 [![](/docs/images/flask-logo.png)](/docs/python/flask/_index.md##with-psycopg2)
 
 ## References
