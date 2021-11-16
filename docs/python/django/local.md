@@ -9,13 +9,13 @@
     - [References](#references)
 
 
-### Introduction
+## Introduction
 
 This guide will help you add [sqlcommenter](/introduction) to your Django applications running locally.
 
 Please see the reference for the fields added in the SQL comments [google-cloud-sqlcommenter.Fields](/python/django#fields)
 
-### Requirements
+## Requirements
 
 | Steps                     | Resource                                             |
 | ------------------------- | ---------------------------------------------------- |
@@ -24,7 +24,7 @@ Please see the reference for the fields added in the SQL comments [google-cloud-
 | Django 2.X                | https://docs.djangoproject.com/en/stable/faq/install |
 | Python 3.X                | https://www.python.org/downloads/                    |
 
-### Addition to your code
+## Addition to your code
 
 Firstly, please install [google-cloud-sqlcommenter](/python/django#installation).
 
@@ -41,7 +41,7 @@ MIDDLEWARE = [
 'google.cloud.sqlcommenter.django.middleware.SqlCommenter'*
 
 
-### References
+## References
 
 | Resource                     | URL                                              |
 | ---------------------------- | ------------------------------------------------ |

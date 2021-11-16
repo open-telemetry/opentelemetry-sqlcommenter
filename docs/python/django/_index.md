@@ -58,19 +58,19 @@
       - [With DB Driver](#with-db-driver-1)
     - [References](#references)
 
-### Introduction
+## Introduction
 
 This package is in the form of [Django middleware](https://docs.djangoproject.com/en/2.2/topics/http/middleware/) whose purpose is to augment a SQL statement right before execution, with information about the controller and user code to help with later making database optimization decisions, after those statements are examined from the database server's logs.
 
 The middleware uses Django's `connection.execute_wrapper`.
 
-### Requirements
+## Requirements
 
 The middleware uses Django's [`connection.execute_wrapper`](https://docs.djangoproject.com/en/stable/topics/db/instrumentation/#connection-execute-wrapper) and therefore requires [Django 2.0](https://docs.djangoproject.com/en/stable/faq/install) or later (which [support various versions](https://docs.djangoproject.com/en/stable/faq/install/#what-python-version-can-i-use-with-django) of [Python 3](https://www.python.org/downloads/)).
 
 To record [OpenCensus](https://opencensus.io/) information [opencensus-ext-django](https://pypi.org/project/opencensus-ext-django/), version 0.7 or greater, is required.
 
-### Installation
+## Installation
 This middleware can be installed by any of the following:
 > pip <br>
   ```
@@ -101,7 +101,7 @@ Please edit your `settings.py` file to include `google.cloud.sqlcommenter.django
 >'google.cloud.sqlcommenter.django.middleware.SqlCommenter'*
 
 
-### Fields
+## Fields
 
 In the database server logs, the comment's fields are:
 
@@ -120,7 +120,7 @@ After making a request into the middleware-enabled polls web-app.
 /*controller='index',framework='django%3A2.2.1',route='%5Epolls/%24'*/
 ```
 
-#### Expected Fields
+### Expected Fields
 
 | Field         | Included <br /> by default?                    | Description                                                                                                                                                         |
 | ------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -132,7 +132,7 @@ After making a request into the middleware-enabled polls web-app.
 | `traceparent` | <div style="text-align: center">&#10060;</div> | The [W3C TraceContext.Traceparent field](https://www.w3.org/TR/trace-context/#traceparent-field) of the OpenCensus trace                                            |
 | `tracestate`  | <div style="text-align: center">&#10060;</div> | The [W3C TraceContext.Tracestate field](https://www.w3.org/TR/trace-context/#tracestate-field) of the OpenCensus trace                                              |
 
-### End to end examples
+## End to end examples
 
 Examples are based off the [polls app from the Django introduction tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/).
 
@@ -310,7 +310,7 @@ Examining our Postgresql server logs, with the various options
 >  2019-07-19 14:47:53.066 -03 [41602] LOG:  statement: SELECT COUNT(*) AS "__count" FROM "polls_question"
 >/*db_driver='django.db.backends.postgresql'*/
 
-### References 
+## References 
 
 | Resource               | URL                                                                                                   |
 | ---------------------- | ----------------------------------------------------------------------------------------------------- |

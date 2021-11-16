@@ -8,11 +8,11 @@
     - [References](#references)
 
 
-### Introduction
+## Introduction
 
 This guide will help you add [sqlcommenter](/introduction) to your Django applications running on [Google Cloud Platform (GCP)](https://cloud.google.com)
 
-### Requirements
+## Requirements
 
 | Steps                     | Resource                                             |
 | ------------------------- | ---------------------------------------------------- |
@@ -21,7 +21,7 @@ This guide will help you add [sqlcommenter](/introduction) to your Django applic
 | Django 2.X                | https://docs.djangoproject.com/en/stable/faq/install |
 | Python 3.X                | https://www.python.org/downloads/                    |
 
-### Addition to your code
+## Addition to your code
 
 Firstly, please install [google-cloud-sqlcommenter](/python/django#installation).
 
@@ -37,7 +37,7 @@ MIDDLEWARE = [
 >If any middleware execute database queries (that you'd like commented by SqlCommenter), those middleware MUST appear after
 'google.cloud.sqlcommenter.django.middleware.SqlCommenter'
 
-### References
+## References
 
 | Resource                     | URL                                              |
 | ---------------------------- | ------------------------------------------------ |

@@ -8,11 +8,11 @@
     - [References](#references)
 
 
-### Introduction
+## Introduction
 
 This guide will help you add [sqlcommenter](/introduction) to your Django applications running on [Amazon Web Services (AWS)](https://aws.amazon.com)
 
-### Requirements
+## Requirements
 
 | Steps                     | Resource                                                                   |
 | ------------------------- | -------------------------------------------------------------------------- |
@@ -21,7 +21,7 @@ This guide will help you add [sqlcommenter](/introduction) to your Django applic
 | Django 2.X                | https://docs.djangoproject.com/en/stable/faq/install                       |
 | Python 3.X                | https://www.python.org/downloads/                                          |
 
-### Addition to your code
+## Addition to your code
 
 For any Django deployment, we can just edit your settings.py file and update the `MIDDLEWARE` section
 with
@@ -35,7 +35,7 @@ MIDDLEWARE = [
 >If any middleware execute database queries (that you'd like commented by SqlCommenter), those middleware MUST appear after
 'google.cloud.sqlcommenter.django.middleware.SqlCommenter'
 
-### References
+## References
 
 | Resource                             | URL                                                                        |
 | ------------------------------------ | -------------------------------------------------------------------------- |
