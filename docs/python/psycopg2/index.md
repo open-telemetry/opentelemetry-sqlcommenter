@@ -59,7 +59,7 @@ pip3 install google-cloud-sqlcommenter
 
 ### Source install
 ```
-git clone https://github.com/google/sqlcommenter.git
+git clone https://github.com/open-telemetry/opentelemetry-sqlcommenter.git
 cd python/sqlcommenter-python && python3 setup.py install
 ```
 
@@ -97,7 +97,7 @@ conn = psycopg2.connect(..., cursor_factory=CommenterCursorFactory(with_opencens
 | `tracestate`         | The [W3C TraceContext.Tracestate field](https://www.w3.org/TR/trace-context/#tracestate-field) of the OpenCensus trace -- optionally defined with [`with_opencensus=True`](#with-opencensus)   | <div style="text-align: center">&#10060;</div> |
 
 ### Default options with flask
-If combined with [Flask](/docs/python/flask/_index.md), the following options will be turned on by default
+If combined with [Flask](/docs/python/flask/index.md), the following options will be turned on by default
 
 | Field        | Description                         | \*\*kwargs field name |
 | ------------ | ----------------------------------- | --------------------- |
@@ -304,7 +304,7 @@ Examining our Postgresql server logs, with the various options
 
 ## With flask
 When coupled with the web framework [flask](http://flask.pocoo.org), we still provide middleware to correlate your web applications with your SQL statements from psycopg2. Please see this end-to-end guide below:<br>
-[![](/docs/images/flask-logo.png)](/docs/python/flask/_index.md##with-psycopg2)
+[![](/docs/images/flask-logo.png)](/docs/python/flask/index.md##with-psycopg2)
 
 ## References
 
@@ -312,7 +312,7 @@ When coupled with the web framework [flask](http://flask.pocoo.org), we still pr
 | ------------------------------- | -------------------------------------------------- |
 | psycopg2 project                | http://initd.org/psycopg/docs/index.html           |
 | sqlcommenter-psycopg2 on PyPi   | https://pypi.org/project/google-cloud-sqlcommenter |
-| sqlcommenter-psycopg2 on Github | https://github.com/google/sqlcommenter             |
+| sqlcommenter-psycopg2 on Github | https://github.com/open-telemetry/opentelemetry-sqlcommenter             |
 | OpenCensus                      | https://opencensus.io/                             |
 | OpenCensus SpanID               | https://opencensus.io/tracing/span/spanid          |
 | OpenCensus TraceID              | https://opencensus.io/tracing/span/traceid         |

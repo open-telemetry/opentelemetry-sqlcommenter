@@ -13,7 +13,7 @@
 
 This guide will help you add [sqlcommenter](/introduction) to your Django applications running locally.
 
-Please see the reference for the fields added in the SQL comments [google-cloud-sqlcommenter.Fields](_index.md#fields)
+Please see the reference for the fields added in the SQL comments [google-cloud-sqlcommenter.Fields](index.md#fields)
 
 ## Requirements
 
@@ -46,4 +46,4 @@ MIDDLEWARE = [
 | Resource                     | URL                                              |
 | ---------------------------- | ------------------------------------------------ |
 | Django quickstart            | https://docs.djangoproject.com/en/stable/intro/  |
-| Installing Django middleware | [_index.md#installation](_index.md#installation) |
+| Installing Django middleware | [index.md#installation](index.md#installation) |

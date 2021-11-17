@@ -40,4 +40,4 @@ MIDDLEWARE = [
 | Resource                             | URL                                                                        |
 | ------------------------------------ | -------------------------------------------------------------------------- |
 | Deploying Python applications on AWS | https://aws.amazon.com/getting-started/projects/deploy-python-application/ |
-| General sqlcommenter Django guide    | [_index.md](_index.md)                                                     |
+| General sqlcommenter Django guide    | [index.md](index.md)                                                     |

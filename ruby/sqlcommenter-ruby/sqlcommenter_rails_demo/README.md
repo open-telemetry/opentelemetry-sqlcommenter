@@ -3,7 +3,7 @@
 This is a demo [Rails API] application to demonstrate [sqlcommenter_rails] integration.
 
 [Rails API]: https://guides.rubyonrails.org/api_app.html
-[sqlcommenter_rails]: https://github.com/google/sqlcommenter/ruby/sqlcommenter-ruby/sqlcommenter_rails
+[sqlcommenter_rails]: https://github.com/open-telemetry/opentelemetry-sqlcommenter/ruby/sqlcommenter-ruby/sqlcommenter_rails
 
 ## Setup
 

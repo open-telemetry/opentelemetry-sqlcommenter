@@ -7,7 +7,7 @@ Powered by [marginalia] and [marginalia-opencensus].
 [sqlcommenter]: #todo
 [Ruby on Rails]: https://rubyonrails.org/
 [marginalia]: https://github.com/basecamp/marginalia/
-[marginalia-opencensus]: https://github.com/google/sqlcommenter/tree/master/ruby/sqlcommenter-ruby/marginalia-opencensus
+[marginalia-opencensus]: https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/master/ruby/sqlcommenter-ruby/marginalia-opencensus
 
 ## Installation
 
@@ -34,7 +34,7 @@ Install dependencies:
 bin/setup
 ```
 
-Please look at the [sqlcommenter_rails_demo](https://github.com/google/sqlcommenter/tree/master/ruby/sqlcommenter-ruby/sqlcommenter_rails_demo#sqlcommenter_rails-demo) for an example on how to install and use this gem in your project.
+Please look at the [sqlcommenter_rails_demo](https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/master/ruby/sqlcommenter-ruby/sqlcommenter_rails_demo#sqlcommenter_rails-demo) for an example on how to install and use this gem in your project.
 
 
 ## Usage

@@ -1,3 +1,7 @@
+layout: page
+title: "Django ReadMe"
+permalink: /python/django/index.md/
+
 # Django
 ![](/docs/images/django-logo.png)
 
@@ -79,7 +83,7 @@ This middleware can be installed by any of the following:
   
 > source <br>
 ```
-git clone https://github.com/google/sqlcommenter.git
+git clone https://github.com/open-telemetry/opentelemetry-sqlcommenter.git
 cd python/sqlcommenter-python && python3 setup.py install
 ```
 
@@ -325,4 +329,4 @@ Examining our Postgresql server logs, with the various options
 | OpenCensus             | https://opencensus.io/                                                                                |
 | opencensus-ext-django  | https://github.com/census-instrumentation/opencensus-python/tree/master/contrib/opencensus-ext-django |
 | sqlcommenter on PyPi   | https://pypi.org/project/google-cloud-sqlcommenter                                                    |
-| sqlcommenter on Github | https://github.com/google/sqlcommenter                                                                |
+| sqlcommenter on Github | https://github.com/open-telemetry/opentelemetry-sqlcommenter                                                                |

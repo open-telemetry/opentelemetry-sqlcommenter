@@ -42,4 +42,4 @@ MIDDLEWARE = [
 | Resource                     | URL                                              |
 | ---------------------------- | ------------------------------------------------ |
 | Running Django on GCP        | https://cloud.google.com/python/django/          |
-| Installing Django middleware | [_index.md#installation](_index.md#installation) |
+| Installing Django middleware | [index.md#installation](index.md#installation) |
