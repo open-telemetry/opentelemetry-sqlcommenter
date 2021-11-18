@@ -1,16 +1,16 @@
 
 # Django
-![](/images/django-logo.png)
+![](/opentelemetry-sqlcommenter/images/django-logo.png)
 
 
 
-![](/images/aws-logo.png)(aws.md)
+![](/opentelemetry-sqlcommenter/images/aws-logo.png)(aws.md)
 
 
-  ![](/images/gcp-logo.png)(gcp.md)
+  ![](/opentelemetry-sqlcommenter/images/gcp-logo.png)(gcp.md)
 
 
-   ![](/images/locally-logo.png)(local.md)
+   ![](/opentelemetry-sqlcommenter/images/locally-logo.png)(local.md)
 
 
 <style>
