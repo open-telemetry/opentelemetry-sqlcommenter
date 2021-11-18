@@ -1,5 +1,6 @@
 # SQLAlchemy
-
+![](../../images/sqlalchemy-logo.png)
+ 
 - [Introduction](#introduction)
 - [Requirements](#requirements)
 - [BeforeExecuteFactory](#BeforeExecuteFactory)
@@ -191,7 +192,7 @@ Examining our Postgresql server logs
 ### With flask
 When coupled with the web framework [flask](http://flask.pocoo.org), we still provide middleware to correlate
 your web applications with your SQL statements from psycopg2. Please see this end-to-end guide below:<br>
-[![](/images/flask-logo.png)](/docs/python/flask/#with-psycopg2)
+[![](../../images/flask-logo.png)](../flask/#with-psycopg2)
 
 ### References
 

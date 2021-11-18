@@ -98,7 +98,7 @@ route='/polls',traceparent='00-5b3df77064f35f091e89fb40022e2a1d-9bbd4868cf0ba2c3
 
 ### With sqlalchemy
 
-Having successfully installed [google-cloud-sqlcommenter](/docs/python/SQLAlchemy/) you can now just run
+Having successfully installed [google-cloud-sqlcommenter](../sqlalchemy/) you can now just run
 
 ```
 #!/usr/bin/env python3
@@ -147,4 +147,4 @@ framework='flask%3A1.0.3',libpq_version=100001,route='/polls'*/
 | ----------------------------- | -------------------------------------------------------------- |
 | flask web framework           | http://flask.pocoo.org/                                        |
 | sqlcommenter-psycopg2+flask   | [link](../psycopg2/#with-flask)     |
-| sqlcommenter-sqlalchemy+flask | [link](../python/sqlalchemy/#with-flask) |
+| sqlcommenter-sqlalchemy+flask | [link](../sqlalchemy/#with-flask) |
