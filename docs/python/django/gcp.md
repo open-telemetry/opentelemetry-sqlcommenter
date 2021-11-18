@@ -1,5 +1,5 @@
 # Google Cloud Platform
-![](/docs/images/gcp-logo.png)
+![](/images/gcp-logo.png)
 
 - [Google Cloud Platform](#google-cloud-platform)
     - [Introduction](#introduction)
@@ -23,7 +23,7 @@ This guide will help you add [sqlcommenter](/introduction) to your Django applic
 
 ## Addition to your code
 
-Firstly, please install [google-cloud-sqlcommenter](/python/django#installation).
+Firstly, please install [google-cloud-sqlcommenter](/python/django/#installation).
 
 For any Django deployment, we can just edit our settings.py file and update the `MIDDLEWARE` section as per:
 

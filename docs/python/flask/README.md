@@ -1,5 +1,5 @@
 # Flask
-![](/docs/images/flask-logo.png)
+![](/images/flask-logo.png)
 
 - [Flask](#flask)
     - [Introduction](#introduction)
@@ -14,8 +14,8 @@
 
 We provide Flask middleware which when coupled with:
 
-* [sqlcommenter-psycopg2](/docs/python/psycopg2/index.md)
-* [sqlcommenter-sqlalchemy](/docs/python/SQLAlchemy/index.md)
+* [sqlcommenter-psycopg2](/docs/python/psycopg2/)
+* [sqlcommenter-sqlalchemy](/docs/python/SQLAlchemy/)
 
 allow us to retrieve the `controller` and `route` correlated with your source code in your web app.
 
@@ -98,7 +98,7 @@ route='/polls',traceparent='00-5b3df77064f35f091e89fb40022e2a1d-9bbd4868cf0ba2c3
 
 ### With sqlalchemy
 
-Having successfully installed [google-cloud-sqlcommenter](/docs/python/SQLAlchemy/index.md) you can now just run
+Having successfully installed [google-cloud-sqlcommenter](/docs/python/SQLAlchemy/) you can now just run
 
 ```
 #!/usr/bin/env python3
@@ -146,5 +146,5 @@ framework='flask%3A1.0.3',libpq_version=100001,route='/polls'*/
 | Resource                      | URL                                                            |
 | ----------------------------- | -------------------------------------------------------------- |
 | flask web framework           | http://flask.pocoo.org/                                        |
-| sqlcommenter-psycopg2+flask   | [/python/psycopg2#with-flask](/python/psycopg2#with-flask)     |
-| sqlcommenter-sqlalchemy+flask | [/python/sqlalchemy#with-flask](/python/sqlalchemy#with-flask) |
+| sqlcommenter-psycopg2+flask   | [/python/psycopg2/#with-flask](/python/psycopg2/#with-flask)     |
+| sqlcommenter-sqlalchemy+flask | [/python/sqlalchemy/#with-flask](/python/sqlalchemy/#with-flask) |

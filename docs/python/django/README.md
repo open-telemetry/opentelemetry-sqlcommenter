@@ -1,25 +1,22 @@
-layout: page
-title: "Django ReadMe"
-permalink: /python/django/index.md/
 
 # Django
-![](/docs/images/django-logo.png)
+![](/images/django-logo.png)
 
 <div class="row" >
 
 <div class = "column">
 
-[![](/docs/images/aws-logo.png)](aws.md)
+[![](/images/aws-logo.png)](aws.md)
 
 </div>
 <div class = "column">
 
-  [![](/docs/images/gcp-logo.png)](gcp.md)
+  [![](/images/gcp-logo.png)](gcp.md)
 
   </div>
   <div class = "column">
 
-   [![](/docs/images/locally-logo.png)](local.md)
+   [![](/images/locally-logo.png)](local.md)
 
    </div>
 </div>

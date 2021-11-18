@@ -1,5 +1,5 @@
 # Amazon Web Services
-![](/docs/images/aws-logo.png)
+![](/images/aws-logo.png)
 
 - [Amazon Web Services](#amazon-web-services)
     - [Introduction](#introduction)
@@ -40,4 +40,4 @@ MIDDLEWARE = [
 | Resource                             | URL                                                                        |
 | ------------------------------------ | -------------------------------------------------------------------------- |
 | Deploying Python applications on AWS | https://aws.amazon.com/getting-started/projects/deploy-python-application/ |
-| General sqlcommenter Django guide    | [index.md](index.md)                                                     |
+| General sqlcommenter Django guide    | [Link](README.md)                                                     |
