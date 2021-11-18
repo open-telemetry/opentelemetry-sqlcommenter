@@ -23,7 +23,7 @@ This guide will help you add [sqlcommenter](https://github.com/open-telemetry/op
 
 ## Addition to your code
 
-Firstly, please install [google-cloud-sqlcommenter](/python/django/#installation).
+Firstly, please install [google-cloud-sqlcommenter](README.md#installation).
 
 For any Django deployment, we can just edit our settings.py file and update the `MIDDLEWARE` section as per:
 
@@ -42,4 +42,4 @@ MIDDLEWARE = [
 | Resource                     | URL                                              |
 | ---------------------------- | ------------------------------------------------ |
 | Running Django on GCP        | https://cloud.google.com/python/django/          |
-| Installing Django middleware | [Link](README.md#installation) |
+| Installing Django middleware | [link](README.md#installation) |

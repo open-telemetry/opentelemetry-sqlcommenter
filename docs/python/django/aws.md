@@ -23,6 +23,8 @@ This guide will help you add [sqlcommenter](https://github.com/open-telemetry/op
 
 ## Addition to your code
 
+Firstly, please install [google-cloud-sqlcommenter](README.md#installation).
+
 For any Django deployment, we can just edit your settings.py file and update the `MIDDLEWARE` section
 with
 ```python
@@ -40,4 +42,4 @@ MIDDLEWARE = [
 | Resource                             | URL                                                                        |
 | ------------------------------------ | -------------------------------------------------------------------------- |
 | Deploying Python applications on AWS | https://aws.amazon.com/getting-started/projects/deploy-python-application/ |
-| General sqlcommenter Django guide    | [Link](README.md)                                                     |
+| General sqlcommenter Django guide    | [link](README.md)                                                     |

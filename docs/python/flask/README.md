@@ -1,5 +1,5 @@
 # Flask
-![](/images/flask-logo.png)
+![](/opentelemetry-sqlcommenter/images/flask-logo.png)
 
 - [Flask](#flask)
     - [Introduction](#introduction)
@@ -14,8 +14,8 @@
 
 We provide Flask middleware which when coupled with:
 
-* [sqlcommenter-psycopg2](/docs/python/psycopg2/)
-* [sqlcommenter-sqlalchemy](/docs/python/SQLAlchemy/)
+* [sqlcommenter-psycopg2](../psycopg2/)
+* [sqlcommenter-sqlalchemy](../SQLAlchemy/)
 
 allow us to retrieve the `controller` and `route` correlated with your source code in your web app.
 
@@ -146,5 +146,5 @@ framework='flask%3A1.0.3',libpq_version=100001,route='/polls'*/
 | Resource                      | URL                                                            |
 | ----------------------------- | -------------------------------------------------------------- |
 | flask web framework           | http://flask.pocoo.org/                                        |
-| sqlcommenter-psycopg2+flask   | [/python/psycopg2/#with-flask](/python/psycopg2/#with-flask)     |
-| sqlcommenter-sqlalchemy+flask | [/python/sqlalchemy/#with-flask](/python/sqlalchemy/#with-flask) |
+| sqlcommenter-psycopg2+flask   | [link](../psycopg2/#with-flask)     |
+| sqlcommenter-sqlalchemy+flask | [link](../python/sqlalchemy/#with-flask) |

@@ -26,7 +26,7 @@ Please see the reference for the fields added in the SQL comments [google-cloud-
 
 ## Addition to your code
 
-Firstly, please install [google-cloud-sqlcommenter](/python/django#installation).
+Firstly, please install [google-cloud-sqlcommenter](README.md#installation).
 
 For any Django deployment, we can just edit our settings.py file and update the `MIDDLEWARE` section as per:
 
@@ -46,4 +46,4 @@ MIDDLEWARE = [
 | Resource                     | URL                                              |
 | ---------------------------- | ------------------------------------------------ |
 | Django quickstart            | https://docs.djangoproject.com/en/stable/intro/  |
-| Installing Django middleware | [Link](README.md/#installation) |
+| Installing Django middleware | [link](README.md/#installation) |
