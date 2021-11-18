@@ -36,9 +36,9 @@ This Flask integration when coupled with compatible drivers will place the follo
 
 | Field      | Included by default                            | Description                                        | Turn if off by          |
 | ---------- | ---------------------------------------------- | -------------------------------------------------- | ----------------------- |
-| controller | <div style="text-align: center">&#10004;</div> | The function being used to service an HTTP request | `with_controller=False` |
-| framework  | <div style="text-align: center">&#10004;</div> | "flask:<FLASK_VERSION>"                            | `with_framework=False`  |
-| route      | <div style="text-align: center">&#10004;</div> | The pattern used to match an HTTP request          | `with_route=False`      |
+| controller | &#10004; | The function being used to service an HTTP request | `with_controller=False` |
+| framework  | &#10004; | "flask:<FLASK_VERSION>"                            | `with_framework=False`  |
+| route      | &#10004;| The pattern used to match an HTTP request          | `with_route=False`      |
 
 ## End to end examples
 ### With psycopg2
@@ -98,7 +98,7 @@ route='/polls',traceparent='00-5b3df77064f35f091e89fb40022e2a1d-9bbd4868cf0ba2c3
 
 ### With sqlalchemy
 
-Having successfully installed [google-cloud-sqlcommenter](../sqlalchemy/) you can now just run
+Having successfully installed [google-cloud-sqlcommenter](../SQLAlchemy/) you can now just run
 
 ```
 #!/usr/bin/env python3
@@ -147,4 +147,4 @@ framework='flask%3A1.0.3',libpq_version=100001,route='/polls'*/
 | ----------------------------- | -------------------------------------------------------------- |
 | flask web framework           | http://flask.pocoo.org/                                        |
 | sqlcommenter-psycopg2+flask   | [link](../psycopg2/#with-flask)     |
-| sqlcommenter-sqlalchemy+flask | [link](../sqlalchemy/#with-flask) |
+| sqlcommenter-sqlalchemy+flask | [link](../SQLAlchemy/#with-flask) |

@@ -3,7 +3,6 @@
 ![](/opentelemetry-sqlcommenter/images/django-logo.png)
 
 
-
 [![](/opentelemetry-sqlcommenter/images/aws-logo.png)](aws)
 
 
@@ -14,19 +13,10 @@
 
 
 <style>
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 33%;
-  padding: 0px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+    img[src*='/gcp-logo.png'], img[src*='/aws-logo.png'], img[src*='/locally-logo.png'] {
+        max-width: 33%;
+        float: left;
+    }
 </style>
 
 
@@ -117,13 +107,13 @@ After making a request into the middleware-enabled polls web-app.
 
 | Field         | Included <br /> by default?                    | Description                                                                                                                                                         |
 | ------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `app_name`    | <div style="text-align: center">&#10060;</div> | The [application namespace](https://docs.djangoproject.com/en/2.2/ref/urlresolvers/#django.urls.ResolverMatch.app_name) of the matching URL pattern in your urls.py |
-| `controller`  | <div style="text-align: center">&#10004;</div> | The [name](https://docs.djangoproject.com/en/2.2/ref/urls/#path) of the matching URL pattern as described in your urls.py                                           |
-| `db_driver`   | <div style="text-align: center">&#10060;</div> | The name of the Django [database engine](https://docs.djangoproject.com/en/2.2/ref/settings/#engine)                                                                |
-| `framework`   | <div style="text-align: center">&#10004;</div> | The word "django" and the version of Django being used                                                                                                              |
-| `route`       | <div style="text-align: center">&#10004;</div> | The [route](https://docs.djangoproject.com/en/2.2/ref/urlresolvers/#django.urls.ResolverMatch.route) of the matching URL pattern as described in your urls.py       |
-| `traceparent` | <div style="text-align: center">&#10060;</div> | The [W3C TraceContext.Traceparent field](https://www.w3.org/TR/trace-context/#traceparent-field) of the OpenCensus trace                                            |
-| `tracestate`  | <div style="text-align: center">&#10060;</div> | The [W3C TraceContext.Tracestate field](https://www.w3.org/TR/trace-context/#tracestate-field) of the OpenCensus trace                                              |
+| `app_name`    | &#10060; | The [application namespace](https://docs.djangoproject.com/en/2.2/ref/urlresolvers/#django.urls.ResolverMatch.app_name) of the matching URL pattern in your urls.py |
+| `controller`  | &#10004;| The [name](https://docs.djangoproject.com/en/2.2/ref/urls/#path) of the matching URL pattern as described in your urls.py                                           |
+| `db_driver`   | &#10060;| The name of the Django [database engine](https://docs.djangoproject.com/en/2.2/ref/settings/#engine)                                                                |
+| `framework`   | &#10004; | The word "django" and the version of Django being used                                                                                                              |
+| `route`       | &#10004; | The [route](https://docs.djangoproject.com/en/2.2/ref/urlresolvers/#django.urls.ResolverMatch.route) of the matching URL pattern as described in your urls.py       |
+| `traceparent` | &#10060; | The [W3C TraceContext.Traceparent field](https://www.w3.org/TR/trace-context/#traceparent-field) of the OpenCensus trace                                            |
+| `tracestate`  | &#10060; | The [W3C TraceContext.Tracestate field](https://www.w3.org/TR/trace-context/#tracestate-field) of the OpenCensus trace                                              |
 
 ## End to end examples
 
