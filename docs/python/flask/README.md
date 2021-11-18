@@ -1,5 +1,5 @@
 # Flask
-![](/opentelemetry-sqlcommenter/images/flask-logo.png)
+![](../../images/flask-logo.png)
 
 - [Flask](#flask)
     - [Introduction](#introduction)
@@ -42,7 +42,7 @@ This Flask integration when coupled with compatible drivers will place the follo
 
 ## End to end examples
 ### With psycopg2
-```
+```python
 #!/usr/bin/env python3
 
 import psycopg2
@@ -100,7 +100,7 @@ route='/polls',traceparent='00-5b3df77064f35f091e89fb40022e2a1d-9bbd4868cf0ba2c3
 
 Having successfully installed [google-cloud-sqlcommenter](../SQLAlchemy/) you can now just run
 
-```
+```python
 #!/usr/bin/env python3
 
 import json

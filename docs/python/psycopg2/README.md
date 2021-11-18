@@ -110,7 +110,7 @@ If combined with [Flask](../flask), the following options will be turned on by d
 ### Source code
 
 #### With OpenCensus
-```
+```python
 #!/usr/bin/env python3
 
 import psycopg2
@@ -144,7 +144,7 @@ if __name__ == '__main__':
 ```
 
 #### With DB Driver
-```
+```python
 #!/usr/bin/env python3
 
 import psycopg2
@@ -166,7 +166,7 @@ if __name__ == '__main__':
 ```
 
 #### With DB API Level
-```
+```python
 #!/usr/bin/env python3
 
 import psycopg2
@@ -188,7 +188,7 @@ if __name__ == '__main__':
 ```
 
 #### With DB API Thread Safety
-```
+```python
 #!/usr/bin/env python3
 
 import psycopg2
@@ -210,7 +210,7 @@ if __name__ == '__main__':
 ```
 
 #### With Driver Parameter Style
-```
+```python
 #!/usr/bin/env python3
 
 import psycopg2
@@ -232,7 +232,7 @@ if __name__ == '__main__':
 ```
 
 #### With libpq Version
-```
+```python
 #!/usr/bin/env python3
 
 import psycopg2

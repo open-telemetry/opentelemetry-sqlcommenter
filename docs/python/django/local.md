@@ -31,6 +31,8 @@ Firstly, please install [google-cloud-sqlcommenter](README.md#installation).
 For any Django deployment, we can just edit our settings.py file and update the `MIDDLEWARE` section as per:
 
 ```python
+# settings.py
+
 MIDDLEWARE = [
   'google.cloud.sqlcommenter.django.middleware.SqlCommenter',
   ...

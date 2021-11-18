@@ -90,7 +90,7 @@ Field|Description|Included by default
 ### Source code
 
 #### With OpenCensus
-```
+```python
 #!/usr/bin/env python3
 
 from sqlalchemy import create_engine, event
@@ -112,7 +112,7 @@ if __name__ == '__main__':
     main()
 ```
 #### With DB Framework
-```
+```python
 #!/usr/bin/env python3
 
 from sqlalchemy import create_engine, event
@@ -135,7 +135,7 @@ if __name__ == '__main__':
 ```
 
 #### With DB Driver
-```
+```python
 #!/usr/bin/env python3
 
 from sqlalchemy import create_engine, event

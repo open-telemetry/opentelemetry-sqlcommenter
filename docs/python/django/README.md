@@ -1,21 +1,24 @@
 
 # Django
-![](/opentelemetry-sqlcommenter/images/django-logo.png)
+![](../../images/django-logo.png)
 
 
-[![](/opentelemetry-sqlcommenter/images/aws-logo.png)](aws)
+[![](../../images/aws-logo.png)](aws)
 
 
-[![](/opentelemetry-sqlcommenter/images/gcp-logo.png)](gcp)
+[![](../../images/gcp-logo.png)](gcp)
 
 
-[![](/opentelemetry-sqlcommenter/images/locally-logo.png)](local)
+[![](../../images/locally-logo.png)](local)
 
 
 <style>
     img[src*='/gcp-logo.png'], img[src*='/aws-logo.png'], img[src*='/locally-logo.png'] {
         max-width: 33%;
         float: left;
+    }
+     img[src*='/locally-logo.png'] {
+        float:none;        
     }
 </style>
 
@@ -69,7 +72,7 @@ cd python/sqlcommenter-python && python3 setup.py install
 ### Enabling it
 
 Please edit your `settings.py` file to include `google.cloud.sqlcommenter.django.middleware.SqlCommenter` in your `MIDDLEWARE` section like this:
-```diff
+```diff python
 --- settings.py
 +++ settings.py
 @@ -1,3 +1,4 @@
@@ -123,7 +126,7 @@ Examples are based off the [polls app from the Django introduction tutorial](htt
 
 #### Defaults
 
-```
+```python
 # settings.py
 
 MIDDLEWARE = [
@@ -131,7 +134,7 @@ MIDDLEWARE = [
     ...
 ]
 ```
-```  
+```python 
 # polls/urls.py
 
 from django.urls import path
@@ -141,7 +144,7 @@ urlpatterns = [
     path('', views.index, name='index'),
 ]
 ```
-```
+```python
 # polls/views.py
 
 from django.http import HttpResponse
@@ -152,7 +155,7 @@ def index(request):
     return HttpResponse(f"There are {count} questions in the DB.\n")
 ```
 #### With OpenCensus
-```
+```python
 # settings.py
 INSTALLED_APPS = [
     'opencensus.ext.django',
@@ -177,7 +180,7 @@ SQLCOMMENTER_WITH_FRAMEWORK = False
 SQLCOMMENTER_WITH_ROUTE = False
 SQLCOMMENTER_WITH_OPENCENSUS = True
 ```
-```  
+```python  
 # polls/urls.py
 
 from django.urls import path
@@ -187,7 +190,7 @@ urlpatterns = [
     path('', views.index, name='index'),
 ]
 ```
-```  
+```python  
 # polls/views.py
 
 from django.http import HttpResponse
@@ -198,7 +201,7 @@ def index(request):
     return HttpResponse(f"There are {count} questions in the DB.\n")
 ```
 #### With App Name
-```
+```python
 # settings.py
 
 MIDDLEWARE = [
@@ -211,7 +214,7 @@ SQLCOMMENTER_WITH_FRAMEWORK = False
 SQLCOMMENTER_WITH_ROUTE = False
 SQLCOMMENTER_WITH_APP_NAME = True
 ```
-```
+```python
 # polls/urls.py
 
 from django.urls import path
@@ -223,7 +226,7 @@ urlpatterns = [
     path('', views.index, name='index'),
 ]
 ```
-```
+```python
 # polls/views.py
 
 from django.http import HttpResponse
@@ -234,7 +237,7 @@ def index(request):
     return HttpResponse(f"There are {count} questions in the DB.\n")
 ```
 #### With DB Driver
-```
+```python
 # settings.py
 
 MIDDLEWARE = [
@@ -247,7 +250,7 @@ SQLCOMMENTER_WITH_FRAMEWORK = False
 SQLCOMMENTER_WITH_ROUTE = False
 SQLCOMMENTER_WITH_DB_DRIVER = True
 ```
-```
+```python
 # polls/urls.py
 
 from django.urls import path
@@ -257,7 +260,7 @@ urlpatterns = [
     path('', views.index, name='index'),
 ]
 ```
-```
+```python
 # polls/views.py
 
 from django.http import HttpResponse
