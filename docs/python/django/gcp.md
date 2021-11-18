@@ -1,5 +1,5 @@
 # Google Cloud Platform
-![](/images/gcp-logo.png)
+![](/opentelemetry-sqlcommenter/images/gcp-logo.png)
 
 - [Google Cloud Platform](#google-cloud-platform)
     - [Introduction](#introduction)
@@ -10,7 +10,7 @@
 
 ## Introduction
 
-This guide will help you add [sqlcommenter](/introduction) to your Django applications running on [Google Cloud Platform (GCP)](https://cloud.google.com)
+This guide will help you add [sqlcommenter](https://github.com/open-telemetry/opentelemetry-sqlcommenter) to your Django applications running on [Google Cloud Platform (GCP)](https://cloud.google.com)
 
 ## Requirements
 
@@ -42,4 +42,4 @@ MIDDLEWARE = [
 | Resource                     | URL                                              |
 | ---------------------------- | ------------------------------------------------ |
 | Running Django on GCP        | https://cloud.google.com/python/django/          |
-| Installing Django middleware | [index.md#installation](index.md#installation) |
+| Installing Django middleware | [Link](README.md#installation) |
