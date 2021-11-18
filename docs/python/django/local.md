@@ -1,5 +1,5 @@
 # Locally
-![](/images/locally-logo.png)
+![](/opentelemetry-sqlcommenter/images/locally-logo.png)
 
 
 - [Locally](#locally)
@@ -11,9 +11,9 @@
 
 ## Introduction
 
-This guide will help you add [sqlcommenter](/introduction) to your Django applications running locally.
+This guide will help you add [sqlcommenter](https://github.com/open-telemetry/opentelemetry-sqlcommenter) to your Django applications running locally.
 
-Please see the reference for the fields added in the SQL comments [google-cloud-sqlcommenter.Fields](index.md#fields)
+Please see the reference for the fields added in the SQL comments [google-cloud-sqlcommenter.Fields](README.md/#fields)
 
 ## Requirements
 
@@ -46,4 +46,4 @@ MIDDLEWARE = [
 | Resource                     | URL                                              |
 | ---------------------------- | ------------------------------------------------ |
 | Django quickstart            | https://docs.djangoproject.com/en/stable/intro/  |
-| Installing Django middleware | [index.md#installation](index.md#installation) |
+| Installing Django middleware | [Link](README.md/#installation) |

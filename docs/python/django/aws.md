@@ -1,5 +1,5 @@
 # Amazon Web Services
-![](/images/aws-logo.png)
+![](/opentelemetry-sqlcommenter/images/aws-logo.png)
 
 - [Amazon Web Services](#amazon-web-services)
     - [Introduction](#introduction)
@@ -10,7 +10,7 @@
 
 ## Introduction
 
-This guide will help you add [sqlcommenter](/introduction) to your Django applications running on [Amazon Web Services (AWS)](https://aws.amazon.com)
+This guide will help you add [sqlcommenter](https://github.com/open-telemetry/opentelemetry-sqlcommenter) to your Django applications running on [Amazon Web Services (AWS)](https://aws.amazon.com)
 
 ## Requirements
 
