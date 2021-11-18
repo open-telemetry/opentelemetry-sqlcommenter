@@ -1,25 +1,17 @@
 
 # Django
-![](images/django-logo.png)
+![](/images/django-logo.png)
 
-<div class="row" >
 
-<div class = "column">
 
-![](images/aws-logo.png)(aws.md)
+![](/images/aws-logo.png)(aws.md)
 
-</div>
-<div class = "column">
 
-  ![](images/gcp-logo.png)(gcp.md)
+  ![](/images/gcp-logo.png)(gcp.md)
 
-  </div>
-  <div class = "column">
 
    ![](/images/locally-logo.png)(local.md)
 
-   </div>
-</div>
 
 <style>
 /* Three image containers (use 25% for four, and 50% for two, etc) */
