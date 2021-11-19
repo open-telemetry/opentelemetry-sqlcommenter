@@ -160,12 +160,12 @@ uploadArchives {
                     name "sqlcommenter-hibernate"
                     packaging 'jar'
                     description project.description
-                    url 'https://github.com/google/sqlcommenter'
+                    url 'https://github.com/open-telemetry/opentelemetry-sqlcommenter'
 
                     scm {
-                        connection 'scm:svn:https://github.com/google/sqlcommenter'
+                        connection 'scm:svn:https://github.com/open-telemetry/opentelemetry-sqlcommenter'
                         developerConnection 'scm:git:git@github.com/google/sqlcommenter'
-                        url 'https://github.com/google/sqlcommenter'
+                        url 'https://github.com/open-telemetry/opentelemetry-sqlcommenter'
                     }
 
                     licenses {
