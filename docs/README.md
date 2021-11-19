@@ -7,4 +7,3 @@ Contains all the various `sqlcommenter-*` implementations.
     -  [django](python/django/)
     -  [psycopg2](python/psycopg2/)
     -  [sqlalchemy](python/SQLAlchemy/)
-    -  [flask](python/flask/)
