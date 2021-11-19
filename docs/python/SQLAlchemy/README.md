@@ -200,6 +200,6 @@ Resource|URL
 ---|---
 sqlcommenter-sqlalchemy on PyPi|<https://pypi.org/project/google-cloud-sqlcommenter>
 sqlcommenter-sqlalchemy on Github|<https://github.com/open-telemetry/opentelemetry-sqlcommenter>
-OpenCensus|<https://opencensus.io>/
+OpenCensus|<https://opencensus.io/>
 OpenCensus SpanID|<https://opencensus.io/tracing/span/spanid>
 OpenCensus TraceID|<https://opencensus.io/tracing/span/traceid>
