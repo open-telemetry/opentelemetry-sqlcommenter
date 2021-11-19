@@ -16,10 +16,10 @@ This guide will help you add [sqlcommenter](https://github.com/open-telemetry/op
 
 | Steps                     | Resource                                             |
 | ------------------------- | ---------------------------------------------------- |
-| Django on GCP             | https://cloud.google.com/python/django/              |
-| google-cloud-sqlcommenter | https://pypi.org/project/google-cloud-sqlcommenter   |
-| Django 2.X                | https://docs.djangoproject.com/en/stable/faq/install |
-| Python 3.X                | https://www.python.org/downloads/                    |
+| Django on GCP             | <https://cloud.google.com/python/django/>              |
+| google-cloud-sqlcommenter | <https://pypi.org/project/google-cloud-sqlcommenter>   |
+| Django 2.X                | <https://docs.djangoproject.com/en/stable/faq/install> |
+| Python 3.X                | <https://www.python.org/downloads/>                    |
 
 ## Addition to your code
 
@@ -41,5 +41,5 @@ MIDDLEWARE = [
 
 | Resource                     | URL                                              |
 | ---------------------------- | ------------------------------------------------ |
-| Running Django on GCP        | https://cloud.google.com/python/django/          |
+| Running Django on GCP        | <https://cloud.google.com/python/django/>          |
 | Installing Django middleware | [link](README.md#installation) |

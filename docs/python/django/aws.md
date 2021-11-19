@@ -16,10 +16,10 @@ This guide will help you add [sqlcommenter](https://github.com/open-telemetry/op
 
 | Steps                     | Resource                                                                   |
 | ------------------------- | -------------------------------------------------------------------------- |
-| Python on AWS             | https://aws.amazon.com/getting-started/projects/deploy-python-application/ |
-| google-cloud-sqlcommenter | https://pypi.org/project/google-cloud-sqlcommenter                         |
-| Django 2.X                | https://docs.djangoproject.com/en/stable/faq/install                       |
-| Python 3.X                | https://www.python.org/downloads/                                          |
+| Python on AWS             | <https://aws.amazon.com/getting-started/projects/deploy-python-application/> |
+| google-cloud-sqlcommenter | <https://pypi.org/project/google-cloud-sqlcommenter>                         |
+| Django 2.X                | <https://docs.djangoproject.com/en/stable/faq/install>                       |
+| Python 3.X                | <https://www.python.org/downloads/>                                          |
 
 ## Addition to your code
 
@@ -41,5 +41,5 @@ MIDDLEWARE = [
 
 | Resource                             | URL                                                                        |
 | ------------------------------------ | -------------------------------------------------------------------------- |
-| Deploying Python applications on AWS | https://aws.amazon.com/getting-started/projects/deploy-python-application/ |
+| Deploying Python applications on AWS | <https://aws.amazon.com/getting-started/projects/deploy-python-application/> |
 | General sqlcommenter Django guide    | [link](README.md)                                                     |

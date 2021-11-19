@@ -72,7 +72,7 @@ cd python/sqlcommenter-python && python3 setup.py install
 ### Enabling it
 
 Please edit your `settings.py` file to include `google.cloud.sqlcommenter.django.middleware.SqlCommenter` in your `MIDDLEWARE` section like this:
-```diff python
+```diff
 --- settings.py
 +++ settings.py
 @@ -1,3 +1,4 @@
@@ -307,8 +307,8 @@ Examining our Postgresql server logs, with the various options
 
 | Resource               | URL                                                                                                   |
 | ---------------------- | ----------------------------------------------------------------------------------------------------- |
-| Django                 | https://www.djangoproject.com/                                                                        |
-| OpenCensus             | https://opencensus.io/                                                                                |
-| opencensus-ext-django  | https://github.com/census-instrumentation/opencensus-python/tree/master/contrib/opencensus-ext-django |
-| sqlcommenter on PyPi   | https://pypi.org/project/google-cloud-sqlcommenter                                                    |
-| sqlcommenter on Github | https://github.com/open-telemetry/opentelemetry-sqlcommenter                                                                |
+| Django                 | <https://www.djangoproject.com/>                                                                        |
+| OpenCensus             | <https://opencensus.io/>                                                                                |
+| opencensus-ext-django  | <https://github.com/census-instrumentation/opencensus-python/tree/master/contrib/opencensus-ext-django> |
+| sqlcommenter on PyPi   | <https://pypi.org/project/google-cloud-sqlcommenter>                                                    |
+| sqlcommenter on Github | <https://github.com/open-telemetry/opentelemetry-sqlcommenter>                                                                |

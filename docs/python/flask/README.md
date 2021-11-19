@@ -145,6 +145,6 @@ framework='flask%3A1.0.3',libpq_version=100001,route='/polls'*/
 
 | Resource                      | URL                                                            |
 | ----------------------------- | -------------------------------------------------------------- |
-| flask web framework           | http://flask.pocoo.org/                                        |
+| flask web framework           | <http://flask.pocoo.org/>                                        |
 | sqlcommenter-psycopg2+flask   | [link](../psycopg2/#with-flask)     |
 | sqlcommenter-sqlalchemy+flask | [link](../SQLAlchemy/#with-flask) |

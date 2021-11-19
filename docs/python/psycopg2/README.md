@@ -46,8 +46,8 @@ We provide options such as `with_opencensus` because
 
 | Requirement                | Restriction                              |
 | -------------------------- | ---------------------------------------- |
-| psycopg2 **(any version)** | http://initd.org/psycopg/docs/index.html |
-| Python **(any version)**   | https://www.python.org/downloads/        |
+| psycopg2 **(any version)** | <http://initd.org/psycopg/docs/index.html> |
+| Python **(any version)**   | <https://www.python.org/downloads/>        |
 
 ## Installation
 This cursor factory can be installed by any of the following:
@@ -310,9 +310,9 @@ When coupled with the web framework [flask](http://flask.pocoo.org), we still pr
 
 | Resource                        | URL                                                |
 | ------------------------------- | -------------------------------------------------- |
-| psycopg2 project                | http://initd.org/psycopg/docs/index.html           |
-| sqlcommenter-psycopg2 on PyPi   | https://pypi.org/project/google-cloud-sqlcommenter |
-| sqlcommenter-psycopg2 on Github | https://github.com/open-telemetry/opentelemetry-sqlcommenter             |
-| OpenCensus                      | https://opencensus.io/                             |
-| OpenCensus SpanID               | https://opencensus.io/tracing/span/spanid          |
-| OpenCensus TraceID              | https://opencensus.io/tracing/span/traceid         |
+| psycopg2 project                | <http://initd.org/psycopg/docs/index.html>           |
+| sqlcommenter-psycopg2 on PyPi   | <https://pypi.org/project/google-cloud-sqlcommenter> |
+| sqlcommenter-psycopg2 on Github | <https://github.com/open-telemetry/opentelemetry-sqlcommenter>             |
+| OpenCensus                      | <https://opencensus.io/>                             |
+| OpenCensus SpanID               | <https://opencensus.io/tracing/span/spanid>          |
+| OpenCensus TraceID              | <https://opencensus.io/tracing/span/traceid>         |
