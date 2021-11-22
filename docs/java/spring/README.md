@@ -1,5 +1,5 @@
 # Spring
-![](/images/spring-logo.png)
+![](../../images/spring-logo.png)
 
 - [Spring](#spring)
   - [Introduction](#introduction)
@@ -28,7 +28,7 @@ later those properties will be picked up by the actual ORMs and augment your SQL
 ## Requirements
 
 - Java 8+
-- Successfully installed [sqlcommenter-java](../#install)
+- Successfully installed [sqlcommenter-java](../#installing-it)
 
 ## Dependency management
 
@@ -178,4 +178,4 @@ Resource|URL
 Spring framework homepage|<https://spring.io/>
 sqlcommenter-java on Github|<https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/java/sqlcommenter-java>
 Spring Interceptor|<https://docs.spring.io/spring/docs/5.0.4.BUILD-SNAPSHOT/javadoc-api/org/aopalliance/intercept/Interceptor.html>
-Hibernate SQLCommenter integration|[Link](/java/hibernate)
+Hibernate SQLCommenter integration|[Link](../hibernate)

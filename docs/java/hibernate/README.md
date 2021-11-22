@@ -1,7 +1,7 @@
 # Hibernate
 ![](../../images/hibernate-logo.png)
 
- - [hibernate](#hibernate)
+ - [Hibernate](#hibernate)
   - [Introduction](#introduction)
   - [Requirements](#requirements)
   - [Using the integration](#using-the-integration)
@@ -39,7 +39,7 @@ setup. It is best used when coupled with other frameworks such as:
 ## Requirements
 
 - Java 8+
-- Successfully installed [sqlcommenter-java](../#install)
+- Successfully installed [sqlcommenter-java](../#installing-it)
 
 ## Using the integration
 

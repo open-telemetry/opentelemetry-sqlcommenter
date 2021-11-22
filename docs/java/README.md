@@ -9,7 +9,7 @@
     - [Tests](#tests)
 
 ## Introduction
-sqlcommenter-java is the implementation of [sqlcommenter](/) in the Java programming language.
+sqlcommenter-java is the implementation of [sqlcommenter](../) in the Java programming language.
 
 
 ## Integrations
