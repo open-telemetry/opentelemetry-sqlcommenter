@@ -20,7 +20,7 @@
   - [References](#references)
 
 ## Introduction
-We provide an integration for the Spring framework. The integration is an [interceptor](https://docs.spring.io/spring/docs/5.0.4.BUILD-SNAPSHOT/javadoc-api/org/aopalliance/intercept/Interceptor.html) that will record properties about your MVC application per HTTP request, and then
+We provide an integration for the Spring framework. The integration is an [interceptor](https://docs.spring.io/spring-framework/docs/5.0.4.RELEASE/javadoc-api/org/aopalliance/intercept/Interceptor.html) that will record properties about your MVC application per HTTP request, and then
 later those properties will be picked up by the actual ORMs and augment your SQL statements. It is best used with the following ORM integrations:
 
 [![](../../images/hibernate-logo.png)](../hibernate)
