@@ -8,7 +8,8 @@ sqlcommenter support is available for the following [Ruby](https://www.ruby-lang
 <style>
     img[src*='/activerecord_marginalia-logo.png']{
         max-width: 30%;
-        float: left;
+        float: None;
         margin:0 2%;
     }
+
 </style>
