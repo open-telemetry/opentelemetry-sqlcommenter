@@ -72,7 +72,6 @@ Field|Included <br /> by default?|Description|Provided by
 `line`|&#10060;| File and line number calling query | [marginalia](https://github.com/basecamp/marginalia)
 `pid` |&#10060;| Current process id | [marginalia](https://github.com/basecamp/marginalia)
 `route` |&#10004;| Request's full path | [sqlcommenter_rails](https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/ruby/sqlcommenter-ruby/sqlcommenter_rails)
-
 `socket` |&#10060;| Database socket | [marginalia](https://github.com/basecamp/marginalia)
 `traceparent`|&#10060;|The [W3C TraceContext.Traceparent field](https://www.w3.org/TR/trace-context/#traceparent-field) of the OpenCensus trace | [marginalia-opencensus]
 
