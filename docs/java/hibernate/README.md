@@ -52,7 +52,7 @@ By simply adding to your persistence XML file the property
 
 e.g. to your `hibernate.cfg.xml` file
 
-``` java
+```java
 <property name="hibernate.session_factory.statement_inspector"
           value="com.google.cloud.sqlcommenter.schibernate.SCHibernate" />
 ```
@@ -60,7 +60,7 @@ e.g. to your `hibernate.cfg.xml` file
 
 When creating your Hibernate session factory, add our StatementInspector like this:
 
-``` java
+```java
 import com.google.cloud.sqlcommenter.schhibernate.SCHibernate;
 
 ...
@@ -78,7 +78,7 @@ Java project.
 This project uses the following JPA entities:
 
 ##### Post_java
-``` java
+```java
 // In file Post.java
 package com.google.cloud.sqlcommenter.spring.jpa.domain;
 
@@ -125,7 +125,7 @@ public class Post {
 }
 ```
 ##### Tag_java
-``` java
+```java
 // In file Tag.java
 package com.google.cloud.sqlcommenter.spring.jpa.domain;
 
@@ -165,7 +165,7 @@ public class Tag {
 The Repository layer looks as follows:
 
 ##### PostRepository_java
-``` java
+```java
 // In file PostRepository.java
 
 package com.google.cloud.sqlcommenter.spring.jpa.dao;
@@ -184,7 +184,7 @@ public interface PostRepository extends CrudRepository<Post, Long> {
 ```
 
 ##### TagRepository_java
-``` java
+```java
 // In file TagRepository.java
 
 package com.google.cloud.sqlcommenter.spring.jpa.dao;
@@ -204,7 +204,7 @@ public interface TagRepository extends CrudRepository<Tag, Long> {
 
 The Service layer looks as follows:
 ##### ForumService_java
-``` java
+```java
 // In file ForumService.java
 
 package com.google.cloud.sqlcommenter.spring.jpa.service;
@@ -224,7 +224,7 @@ public interface ForumService {
 ```
 
 ##### ForumServiceImpl_java
-``` java
+```java
 // In file ForumServiceImpl.java
 
 package com.google.cloud.sqlcommenter.spring.jpa.service;
@@ -273,7 +273,7 @@ public class ForumServiceImpl implements ForumService {
 
 The Spring JPA configuration looks as follows:
 
-````java
+```java
 // In file JpaTransactionManagerConfiguration.java
 
 package com.google.cloud.sqlcommenter.spring.jpa;
@@ -386,11 +386,11 @@ public class JpaTransactionManagerConfiguration {
         };
     }
 }
-````
+```
 
 Now, the test looks as follows:
 
-````java
+```java
 // In file JpaTransactionManagerTest.java
 
 package com.google.cloud.sqlcommenter.spring.jpa;
@@ -520,11 +520,11 @@ public class JpaTransactionManagerTest {
         );
     }
 }
-````
+```
 
 When running the unit test above, we can see that the SQL statements include the comments as well:
 
-````sql
+```sql
 select tag0_.id as id1_2_, tag0_.name as name2_2_ from tag tag0_ where tag0_.name in (? , ?) /*action='CreatePost',controller='ForumController',framework='spring'*/
 
 call next value for hibernate_sequence /*action='CreatePost',controller='ForumController',framework='spring'*/
@@ -538,7 +538,7 @@ insert into post_tag (post_id, tag_id) values (?, ?) /*action='CreatePost',contr
 select post0_.id as id1_0_, post0_.title as title2_0_ from post post0_ where post0_.title=? /*action='FindPostsByTitle',controller='ForumController',framework='spring'*/
 
 select post0_.id as id1_0_0_, post0_.title as title2_0_0_ from post post0_ where post0_.id=? /*action='FindPostById',controller='ForumController',framework='spring'*/
-````
+```
 
 ### Spring and Hibernate end-to-end example
 
@@ -547,7 +547,7 @@ select post0_.id as id1_0_0_, post0_.title as title2_0_0_ from post post0_ where
 This project uses the following JPA entities:
 
 ##### Post_java
-``` java
+```java
 // In file Post.java
 package com.google.cloud.sqlcommenter.spring.hibernate.domain;
 
@@ -595,7 +595,7 @@ public class Post {
 ```
 
 ##### Tag_java
-``` java
+```java
 // In file Tag.java
 package com.google.cloud.sqlcommenter.spring.hibernate.domain;
 
@@ -634,7 +634,7 @@ public class Tag {
 The DAO (Data Access Object) layer looks as follows:
 
 ##### GenericDAO_java
-``` java
+```java
 // In file GenericDAO.java
 
 package com.google.cloud.sqlcommenter.spring.hibernate.dao;
@@ -649,7 +649,7 @@ public interface GenericDAO<T, ID extends Serializable> {
 }
 ```
 ##### GenericDAOImpl_java
-``` java
+```java
 // In file GenericDAOImpl.java
 
 package com.google.cloud.sqlcommenter.spring.hibernate.dao;
@@ -700,7 +700,7 @@ public abstract class GenericDAOImpl<T, ID extends Serializable> implements Gene
 }
 ```
 ##### PostDAO_java
-``` java
+```java
 // In file PostDAO.java
 
 package com.google.cloud.sqlcommenter.spring.hibernate.dao;
@@ -716,7 +716,7 @@ public interface PostDAO extends GenericDAO<Post, Long> {
 ```
 
 ##### PostDAOImpl_java
-``` java
+```java
 // In file PostDAOImpl.java
 
 package com.google.cloud.sqlcommenter.spring.hibernate.dao;
@@ -744,7 +744,7 @@ public class PostDAOImpl extends GenericDAOImpl<Post, Long> implements PostDAO {
 ```
 
 ##### TagDAO_java
-``` java
+```java
 // In file TagDAO.java
 
 package com.google.cloud.sqlcommenter.spring.hibernate.dao;
@@ -759,7 +759,7 @@ public interface TagDAO extends GenericDAO<Tag, Long> {
 }
 ```
 ##### TagDAOImpl_java
-``` java
+```java
 // In file TagDAOImpl.java
 
 package com.google.cloud.sqlcommenter.spring.hibernate.dao;
@@ -795,7 +795,7 @@ public class TagDAOImpl extends GenericDAOImpl<Tag, Long> implements TagDAO {
 
 The Service layer looks as follows:
 ##### ForumService_java
-``` java
+```java
 // In file ForumService.java
 
 package com.google.cloud.sqlcommenter.spring.hibernate.service;
@@ -815,7 +815,7 @@ public interface ForumService {
 ```
 
 ##### ForumServiceImpl_java
-``` java
+```java
 // In file ForumServiceImpl.java
 
 package com.google.cloud.sqlcommenter.spring.hibernate.service;
@@ -862,7 +862,7 @@ public class ForumServiceImpl implements ForumService {
 ```
 The Spring Hibernate configuration looks as follows:
 
-````java
+```java
 // In file HibernateTransactionManagerConfiguration.java
 
 package com.google.cloud.sqlcommenter.spring.hibernate;
@@ -965,11 +965,11 @@ public class HibernateTransactionManagerConfiguration {
         };
     }
 }
-````
+```
 
 Now, the test looks as follows:
 
-````java
+```java
 // In file HibernateTransactionManagerTest.java
 
 package com.google.cloud.sqlcommenter.spring.hibernate;
@@ -1115,11 +1115,11 @@ public class HibernateTransactionManagerTest {
         );
     }
 }
-````
+```
 
 When running the unit test above, we can see that the SQL statements include the comments as well:
 
-````sql
+```sql
 select tag0_.id as id1_2_, tag0_.name as name2_2_ from tag tag0_ where tag0_.name in (? , ?) /*action='CreatePost',controller='ForumController',framework='spring'*/
 
 call next value for hibernate_sequence /*action='CreatePost',controller='ForumController',framework='spring'*/
@@ -1133,7 +1133,7 @@ insert into post_tag (post_id, tag_id) values (?, ?) /*action='CreatePost',contr
 select post0_.id as id1_0_, post0_.title as title2_0_ from post post0_ where post0_.title=? /*action='FindPostsByTitle',controller='ForumController',framework='spring'*/
 
 select post0_.id as id1_0_0_, post0_.title as title2_0_0_ from post post0_ where post0_.id=? /*action='FindPostById',controller='ForumController',framework='spring'*/
-````
+```
 
 ## References
 

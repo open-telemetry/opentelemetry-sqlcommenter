@@ -43,7 +43,7 @@ Please read [installing sqlcommenter-java from source](../#install)
 Please include this in your dependency management system as follows
 
 #### Maven
-``` xml
+```xml
     <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>sqlcommenter-java</artifactId>
@@ -52,7 +52,7 @@ Please include this in your dependency management system as follows
 ```
 
 #### Gradle
-``` shell
+```shell
 // https://mvnrepository.com/artifact/com.google.cloud/sqlcommenter-java
 compile group: 'com.google.cloud', name: 'sqlcommenter-java', version: '0.0.1'
 ```
@@ -73,7 +73,7 @@ how to enable it for the different versions:
 ### Spring 5
 If using Spring 5, please import the `SpringSQLCommenterInterceptor` class by:
 
-``` java
+```java
 import com.google.cloud.sqlcommenter.interceptors.SpringSQLCommenterInterceptor;
 
 @EnableWebMvc
@@ -96,7 +96,7 @@ public class WebConfig implements WebMvcConfigurer {
 
 If using a version before Spring 5, your `WebConfig` class needs to extend the [WebMVCConfigureAdapter](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/servlet/config/annotation/WebMvcConfigurerAdapter.html) class instead like this:
 
-``` java
+```java
 import com.google.cloud.sqlcommenter.interceptors.SpringSQLCommenterInterceptor;
 
 @EnableWebMvc
@@ -120,14 +120,14 @@ public class WebConfig extends WebMvcConfigureAdapter {
 You can add the interceptor as a bean in your XML configuration
 
 ### For_Every_Method
-``` xml
+```xml
 <mvc:interceptors>
     <bean class="com.google.cloud.sqlcommenter.interceptors.SpringSQLCommenterInterceptor"></bean>
 </mvc:interceptors>
 ```
 
 ### Method_Specific
-``` xml
+```xml
 <mvc:interceptors>
     <mvc:interceptor>
         <mvc:mapping path="/flights"></mvc:mapping>
@@ -142,7 +142,7 @@ If Spring is using Hibernate, in addtion to the step [XML based configuration](#
 since you might not be using a `persistence.xml` file, we can setup in Java code the
 `hibernate.session_factory.statement_inspector` configuration property in your `additionalProperties` method as per
 
-``` java
+```java
 import com.google.cloud.sqlcommenter.schhibernate.SCHibernate;
 
 @Configuration
