@@ -10,9 +10,9 @@
 
 We provide [express.js application-level middleware](https://expressjs.com/en/guide/using-middleware.html#middleware.application) with the following ORMs/Query-Builders:
 
-[![](../../images/knex-logo.png)](knex)
+[![](../../images/knex-logo.png)](../knex)
 
-[![](../../images/sequelize-logo.png)](sequelize)
+[![](../../images/sequelize-logo.png)](../sequelize)
 
 
 <style>
