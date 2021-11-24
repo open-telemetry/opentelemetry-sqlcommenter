@@ -11,7 +11,6 @@
     - [CommenterCursorFactory](#commentercursorfactory)
       - [with_openCensus=True](#with_opencensustrue)
     - [Expected fields](#expected-fields)
-      - [Default options with flask](#default-options-with-flask)
     - [End to end examples](#end-to-end-examples)
       - [Source code](#source-code)
         - [With OpenCensus](#with-opencensus)
@@ -27,7 +26,6 @@
         - [With DB API Thread Safety](#with-db-api-thread-safety-1)
         - [With Driver Parameter Style](#with-driver-parameter-style-1)
         - [With libpq Version](#with-libpq-version-1)
-    - [With flask](#with-flask)
     - [References](#references)
 
 ## Introduction
@@ -94,16 +92,7 @@ conn = psycopg2.connect(..., cursor_factory=CommenterCursorFactory(with_opencens
 | `driver_paramstyle`  | The Python DB API style of parameters e.g. `pyformat`                                                                                                                                          | <div style="text-align: center">&#10060;</div> |
 | `libpq_version`      | The underlying version of [libpq]() that was used by psycopg2                                                                                                                                  | <div style="text-align: center">&#10060;</div> |
 | `traceparent`        | The [W3C TraceContext.Traceparent field](https://www.w3.org/TR/trace-context/#traceparent-field) of the OpenCensus trace -- optionally defined with [`with_opencensus=True`](#with-opencensus) | <div style="text-align: center">&#10060;</div> |
-| `tracestate`         | The [W3C TraceContext.Tracestate field](https://www.w3.org/TR/trace-context/#tracestate-field) of the OpenCensus trace -- optionally defined with [`with_opencensus=True`](#with-opencensus)   | <div style="text-align: center">&#10060;</div> |
-
-### Default options with flask
-If combined with [Flask](../flask), the following options will be turned on by default
-
-| Field        | Description                         | \*\*kwargs field name |
-| ------------ | ----------------------------------- | --------------------- |
-| `controller` | Grabs the controller being used     | `with_controller`     |
-| `framework`  | Grabs the framework and its version | `with_framework`      |
-| `route`      | Grabs the route being used          | `with_route`          |
+| `tracestate`         | The [W3C TraceContext.Tracestate field](https://www.w3.org/TR/trace-context/#tracestate-field) of the OpenCensus trace -- optionally defined with [`with_opencensus=True`](#with-opencensus)   | <div style="text-align: center">&#10060;</div> |         |
 
 ## End to end examples
 
@@ -301,10 +290,6 @@ Examining our Postgresql server logs, with the various options
 2019-07-17 16:05:37.618 -03 [16708] LOG:  statement: SELECT * FROM polls_question
 /*libpq_version=110002*/
 ```
-
-## With flask
-When coupled with the web framework [flask](http://flask.pocoo.org), we still provide middleware to correlate your web applications with your SQL statements from psycopg2. Please see this end-to-end guide below:<br>
-[![](../../images/flask-logo.png)](../flask/README.md#with-psycopg2)
 
 ## References
 

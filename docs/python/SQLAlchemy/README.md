@@ -1,12 +1,11 @@
 # SQLAlchemy
 ![](../../images/sqlalchemy-logo.png)
- 
+
 - [Introduction](#introduction)
 - [Requirements](#requirements)
 - [BeforeExecuteFactory](#BeforeExecuteFactory)
 - [Fields](#fields)
 - [End to end examples](#end-to-end-examples)
-- [With flask](#with-flask)
 - [References](#references)
 
 ## Introduction
@@ -28,7 +27,7 @@ We provide options such as `with_opencensus` because
 ## Installation
 
 ### Pip
-``` 
+```
 pip3 install google-cloud-sqlcommenter
 ```
 ### Source
@@ -188,11 +187,6 @@ Examining our Postgresql server logs
 2019-07-18 14:03:33.426 -03 [29858] LOG:  statement: SELECT * FROM polls_question
 /*db_driver='psycopg2'*/
 ```
-
-### With flask
-When coupled with the web framework [flask](http://flask.pocoo.org), we still provide middleware to correlate
-your web applications with your SQL statements from psycopg2. Please see this end-to-end guide below:<br>
-[![](../../images/flask-logo.png)](../flask/#with-psycopg2)
 
 ### References
 
