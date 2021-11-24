@@ -92,7 +92,7 @@ conn = psycopg2.connect(..., cursor_factory=CommenterCursorFactory(with_opencens
 | `driver_paramstyle`  | The Python DB API style of parameters e.g. `pyformat`                                                                                                                                          | <div style="text-align: center">&#10060;</div> |
 | `libpq_version`      | The underlying version of [libpq]() that was used by psycopg2                                                                                                                                  | <div style="text-align: center">&#10060;</div> |
 | `traceparent`        | The [W3C TraceContext.Traceparent field](https://www.w3.org/TR/trace-context/#traceparent-field) of the OpenCensus trace -- optionally defined with [`with_opencensus=True`](#with-opencensus) | <div style="text-align: center">&#10060;</div> |
-| `tracestate`         | The [W3C TraceContext.Tracestate field](https://www.w3.org/TR/trace-context/#tracestate-field) of the OpenCensus trace -- optionally defined with [`with_opencensus=True`](#with-opencensus)   | <div style="text-align: center">&#10060;</div> |         |
+| `tracestate`         | The [W3C TraceContext.Tracestate field](https://www.w3.org/TR/trace-context/#tracestate-field) of the OpenCensus trace -- optionally defined with [`with_opencensus=True`](#with-opencensus)   | <div style="text-align: center">&#10060;</div> |
 
 ## End to end examples
 
