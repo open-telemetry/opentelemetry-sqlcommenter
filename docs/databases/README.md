@@ -1,6 +1,6 @@
 # Databases
 
-In order to examine the results of [sqlcommenter](/), we'll need
+In order to examine the results of [sqlcommenter](../), we'll need
 to examine query logs on the database. Below are some guides to help make this happen:
 
 
