@@ -17,12 +17,9 @@ to examine query logs on the database. Below are some guides to help make this h
 
 <style>
     img {
-        max-width: 30%;
         float: left;
         margin: 0 2%;
-        max-height: 200px;
-        max-width: 200px;
-
+        width: 200px;
     }
 
     img[src*='/cloud-sql-card.png']
