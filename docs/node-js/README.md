@@ -41,7 +41,7 @@ sqlcommenter-nodejs can installed in a couple of ways:
 
 The first step is to clone the repository. This can be done with [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) by running:
 ```shell
-git clone https://github.com/google/sqlcommenter.git
+git clone https://github.com/open-telemetry/opentelemetry-sqlcommenter.git
 ```
 Inspect the source code and note the path to the package you want installed.
 
