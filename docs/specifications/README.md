@@ -122,16 +122,16 @@ and running the algorithm on the following table will produce
 
 value|url_encode(value)|sql_escape_with_single_quotes
 ---|---|---
-`DROP TABLE FOO`|`DROP%20TABLE%20FOO`|`'DROP%20TABLE%20FOO'`
-`/param first`|`%2Fparam%20first`|`'%2Fparam%20first'`
-`1234`|`1234`|`'1234'`
+DROP TABLE FOO|`DROP%20TABLE%20FOO`|`'DROP%20TABLE%20FOO'`
+/param first|`%2Fparam%20first`|`'%2Fparam%20first'`
+1234|`1234`|`'1234'`
 
 
 ## Key Value format
 Given a key value pair (key, value):
 
-1. Run the [Key serialization algorithm](#key-serialization-algorithm) on `key`
-2. Run the [Value serialization algorithm](#value-serialization-algorithm) on `value`
+1. Run the [Key serialization algorithm](#algorithm-1) on `key`
+2. Run the [Value serialization algorithm](#algorithm-2) on `value`
 3. Using an equals sign `=`, concatenate the result from 1. and 2. to give
 
     `<SERIALIZED_KEY>=<SERIALIZED_VALUE>`
@@ -382,5 +382,5 @@ attributes: {
 
 Resource|URL
 ---|---
-URL Encoding|https://en.wikipedia.org/wiki/Percent-encoding
-Comments within SQL comments|https://docs.oracle.com/cd/B12037_01/server.101/b10759/sql_elements006.htm
+URL Encoding|<https://en.wikipedia.org/wiki/Percent-encoding>
+Comments within SQL comments|<https://docs.oracle.com/cd/B12037_01/server.101/b10759/sql_elements006.htm>

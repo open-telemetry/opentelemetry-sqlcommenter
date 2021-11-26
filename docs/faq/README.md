@@ -125,13 +125,13 @@ The specification is available [here](../specifications).
 
 Integration|action|controller|framework|route
 ---|---|---|---|---
-<a href="../ruby/ruby-on-rails">ActiveRecord<br />/Marginalia</a>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10060;</div>
-<a href="../java/hibernate">Hibernate<br />+ Spring</a>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10060;</div>
-<a href="../node/knex-js">knex.js<br />+ express.js</a>|<div style="text-align: center">&#10060;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10060;</div>|<div style="text-align: center">&#10060;</div>|<div style="text-align: center">&#10060;</div>
-[Django](../python/django)|<div style="text-align: center">&#10060;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10060;</div>
-<a href="../python/psycopg2">psycopg2 <br />+ Flask</a>|<div style="text-align: center">&#10060;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10060;</div>
-<a href="../python/SQLAlchemy">sqlalchemy<br />+ Flask</a>|<div style="text-align: center">&#10060;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10060;</div>
-<a href="../node-js/sequelize">sequelize.js<br />+ express.js</a>|<div style="text-align: center">&#10060;</div>|<div style="text-align: center">&#10004;</div>|<div style="text-align: center">&#10060;</div>|<div style="text-align: center">&#10060;</div>|<div style="text-align: center">&#10060;</div>
+<a href="../ruby/ruby-on-rails">ActiveRecord<br />/Marginalia</a>|&#10004;|&#10004;|&#10004;|&#10004;|&#10060;
+<a href="../java/hibernate">Hibernate<br />+ Spring</a>|&#10004;|&#10004;|&#10004;|&#10004;|&#10060;
+<a href="../node-js/knex">knex.js<br />+ express.js</a>|&#10060;|&#10004;|&#10060;|&#10060;|&#10060;
+[Django](../python/django)|&#10060;|&#10004;|&#10004;|&#10004;|&#10060;
+<a href="../python/psycopg2">psycopg2 <br />+ Flask</a>|&#10060;|&#10004;|&#10004;|&#10004;|&#10060;
+<a href="../python/SQLAlchemy">sqlalchemy<br />+ Flask</a>|&#10060;|&#10004;|&#10004;|&#10004;|&#10060;
+<a href="../node-js/sequelize">sequelize.js<br />+ express.js</a>|&#10060;|&#10004;|&#10060;|&#10060;|&#10060;
 
 ## What ORMs support OpenTelemetry ?
 Node.js ORMs(Knex, Sequelize, Express) support OpenTelemetry.

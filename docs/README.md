@@ -72,12 +72,9 @@ We support a variety of languages and frameworks such as:
 [![](images/flask-logo.png)](python/flask)
 [![](images/ruby-logo.png)](ruby)
 [![](images/hibernate-logo.png)](java/hibernate)
-
 [![](images/spring-logo.png)](java/spring)
 [![](images/knex-logo.png)](node-js/knex)
-
 [![](images/express_js-logo.png)](node-js/express)
-
 [![](images/sequelize-logo.png)](node-js/sequelize)
 
 <style>
@@ -99,11 +96,11 @@ We support a variety of languages and frameworks such as:
 
 We have tested the instrumentation on the following databases:
 
-[![](images/postgresql-logo.png)](postgresql)
+[![](images/postgresql-logo.png)](databases/postgresql)
 
-[![](images/mysql-logo.png)](mysql)
+[![](images/mysql-logo.png)](databases/mysql)
 
-[![](images/mariadb-logo.png)](mariadb)
+[![](images/mariadb-logo.png)](databases/mariadb)
 
 [![](images/sqlite-logo.png)](https://sqlite.org/cli.html)
 
