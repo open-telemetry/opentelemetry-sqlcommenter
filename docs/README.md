@@ -14,6 +14,7 @@ information about the code that caused its execution. This helps in easily corre
     - [Frameworks](#frameworks)
     - [Databases](#databases)
   - [Source code](#source-code)
+  - [References](#references)
 
 ## Value
 sqlcommenter provides instrumentation/wrappers to augment SQL from frameworks and ORMs. The augmented SQL provides key='value' comments
@@ -117,4 +118,11 @@ We have tested the instrumentation on the following databases:
 </style>
 
 ## Source code
-The project is hosted on [Github](https://github.com/google/sqlcommenter/)
+The project is hosted on [Github](https://github.com/open-telemetry/opentelemetry-sqlcommenter)
+
+## References
+
+Resource|URL
+---|---
+Specifications|[Link](specifications/)
+FAQ|[Link](faq/)
