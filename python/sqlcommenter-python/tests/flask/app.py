@@ -15,7 +15,7 @@
 # limitations under the License.
 
 from flask import Flask
-from google.cloud.sqlcommenter.flask import get_flask_info
+from opentelemetry.sqlcommenter.flask import get_flask_info
 
 app = Flask(__name__)
 

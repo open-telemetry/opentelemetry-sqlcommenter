@@ -38,7 +38,7 @@ trace.get_tracer_provider().add_span_processor(
 Psycopg2Instrumentor().instrument()
 
 import psycopg2
-from google.cloud.sqlcommenter.psycopg2.extension import CommenterCursorFactory
+from opentelemetry.sqlcommenter.psycopg2.extension import CommenterCursorFactory
 
 tracer = trace.get_tracer(__name__)
 
