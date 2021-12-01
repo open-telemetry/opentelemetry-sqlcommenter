@@ -24,14 +24,14 @@
 
 
 - [Django](#django)
-    - [Introduction](#introduction)
-    - [Requirements](#requirements)
-    - [Installation](#installation)
+  - [Introduction](#introduction)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
     - [Enabling it](#enabling-it)
-    - [Fields](#fields)
+  - [Fields](#fields)
     - [Sample log entry](#sample-log-entry)
-      - [Expected Fields](#expected-fields)
-    - [End to end examples](#end-to-end-examples)
+    - [Expected Fields](#expected-fields)
+  - [End to end examples](#end-to-end-examples)
     - [Source code](#source-code)
       - [Defaults](#defaults)
       - [With OpenCensus](#with-opencensus)
@@ -42,7 +42,7 @@
       - [With OpenCensus](#with-opencensus-1)
       - [With App Name](#with-app-name-1)
       - [With DB Driver](#with-db-driver-1)
-    - [References](#references)
+  - [References](#references)
 
 ## Introduction
 
