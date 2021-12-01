@@ -30,10 +30,11 @@ jobs:
       working-directory: ./python/sqlcommenter-python
       run: python -m build
     - name: Publish package
-      working-directory: ./python/sqlcommenter-python
       uses: pypa/gh-action-pypi-publish@master
       with:
         user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
         repository_url: https://test.pypi.org/legacy/
+        packages_dir: python/sqlcommenter-python/dist
+
 
