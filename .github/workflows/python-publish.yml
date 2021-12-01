@@ -36,6 +36,6 @@ jobs:
         password: ${{ secrets.TEST_PYPI_API_TOKEN }}
         repository_url: https://test.pypi.org/legacy/
         packages_dir: python/sqlcommenter-python/dist/
-          verbose: true
+        verbose: true
 
 
