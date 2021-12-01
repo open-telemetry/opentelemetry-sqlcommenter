@@ -25,9 +25,9 @@ def read_file(filename):
 
 
 setup(
-    name='google-cloud-sqlcommenter',
-    version='2.0.0',
-    author='Google Developers',
+    name='test-opentelemetry-sqlcommenter',
+    version='1.0.0',
+    author='opentelemetry',
     author_email='sqlcommenter@googlegroups.com',
     description=('Augment SQL statements with meta information about frameworks and the running environment.'),
     long_description=read_file('README.md'),
