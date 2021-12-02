@@ -188,6 +188,8 @@ Examining our Postgresql server logs
 /*db_driver='psycopg2'*/
 ```
 
+### With flask
+When coupled with the web framework [flask](http://flask.pocoo.org), we sprovide a class (`BeforeExecuteFactory`) to correlate your web applications with your SQL statements from psycopg2.
 ### References
 
 Resource|URL

@@ -94,6 +94,15 @@ conn = psycopg2.connect(..., cursor_factory=CommenterCursorFactory(with_opencens
 | `traceparent`        | The [W3C TraceContext.Traceparent field](https://www.w3.org/TR/trace-context/#traceparent-field) of the OpenCensus trace -- optionally defined with [`with_opencensus=True`](#with-opencensus) | <div style="text-align: center">&#10060;</div> |
 | `tracestate`         | The [W3C TraceContext.Tracestate field](https://www.w3.org/TR/trace-context/#tracestate-field) of the OpenCensus trace -- optionally defined with [`with_opencensus=True`](#with-opencensus)   | <div style="text-align: center">&#10060;</div> |
 
+### Default options with flask
+If combined with [Flask](../flask), the following options will be turned on by default
+
+| Field        | Description                         | \*\*kwargs field name |
+| ------------ | ----------------------------------- | --------------------- |
+| `controller` | Grabs the controller being used     | `with_controller`     |
+| `framework`  | Grabs the framework and its version | `with_framework`      |
+| `route`      | Grabs the route being used          | `with_route`          |
+
 ## End to end examples
 
 ### Source code
@@ -291,6 +300,9 @@ Examining our Postgresql server logs, with the various options
 /*libpq_version=110002*/
 ```
 
+## With Flask
+When coupled with the web framework [Flask](http://flask.pocoo.org), we still provide a function (`google.cloud.sqlcommenter.flask.get_flask_info`) to correlate your web applications with your SQL statements from psycopg2.
+This function is integrated in `CommenterCursorFactory`.
 ## References
 
 | Resource                        | URL                                                |
