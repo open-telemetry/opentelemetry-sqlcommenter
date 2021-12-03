@@ -54,7 +54,7 @@ This cursor factory can be installed by any of the following:
 
 ### Pip install
 ```
-pip3 install google-cloud-sqlcommenter
+pip3 install opentelemetry-sqlcommenter
 ```
 
 ### Source install
@@ -72,7 +72,7 @@ We'll perform the following imports in our source code:
 
 ```python
 import psycopg2
-from google.cloud.sqlcommenter.psycopg2.extension import CommenterCursorFactory
+from opentelemetry.sqlcommenter.psycopg2.extension import CommenterCursorFactory
 
 conn = psycopg2.connect(..., cursor_factory=CommenterCursorFactory())
 ```
@@ -114,7 +114,7 @@ If combined with [Flask](../flask), the following options will be turned on by d
 #!/usr/bin/env python3
 
 import psycopg2
-from google.cloud.sqlcommenter.psycopg2.extension import CommenterCursorFactory
+from opentelemetry.sqlcommenter.psycopg2.extension import CommenterCursorFactory
 
 from opencensus.trace.samplers import AlwaysOnSampler
 from opencensus.trace.tracer import Tracer
@@ -148,7 +148,7 @@ if __name__ == '__main__':
 #!/usr/bin/env python3
 
 import psycopg2
-from google.cloud.sqlcommenter.psycopg2.extension import CommenterCursorFactory
+from opentelemetry.sqlcommenter.psycopg2.extension import CommenterCursorFactory
 
 DSN = '...'  # DB connection info
 
@@ -170,7 +170,7 @@ if __name__ == '__main__':
 #!/usr/bin/env python3
 
 import psycopg2
-from google.cloud.sqlcommenter.psycopg2.extension import CommenterCursorFactory
+from opentelemetry.sqlcommenter.psycopg2.extension import CommenterCursorFactory
 
 DSN = '...'  # DB connection info
 
@@ -192,7 +192,7 @@ if __name__ == '__main__':
 #!/usr/bin/env python3
 
 import psycopg2
-from google.cloud.sqlcommenter.psycopg2.extension import CommenterCursorFactory
+from opentelemetry.sqlcommenter.psycopg2.extension import CommenterCursorFactory
 
 DSN = '...'  # DB connection info
 
@@ -214,7 +214,7 @@ if __name__ == '__main__':
 #!/usr/bin/env python3
 
 import psycopg2
-from google.cloud.sqlcommenter.psycopg2.extension import CommenterCursorFactory
+from opentelemetry.sqlcommenter.psycopg2.extension import CommenterCursorFactory
 
 DSN = '...'  # DB connection info
 
@@ -236,7 +236,7 @@ if __name__ == '__main__':
 #!/usr/bin/env python3
 
 import psycopg2
-from google.cloud.sqlommenter.psycopg2.extension import CommenterCursorFactory
+from opentelemetry.sqlcommenter.psycopg2.extension import CommenterCursorFactory
 
 DSN = '...'  # DB connection info
 
@@ -311,7 +311,7 @@ When coupled with the web framework [flask](http://flask.pocoo.org), we still pr
 | Resource                        | URL                                                |
 | ------------------------------- | -------------------------------------------------- |
 | psycopg2 project                | <http://initd.org/psycopg/docs/index.html>           |
-| sqlcommenter-psycopg2 on PyPi   | <https://pypi.org/project/google-cloud-sqlcommenter> |
+| sqlcommenter-psycopg2 on PyPi   | <https://pypi.org/project/opentelemetry-sqlcommenter> |
 | sqlcommenter-psycopg2 on Github | <https://github.com/open-telemetry/opentelemetry-sqlcommenter>             |
 | OpenCensus                      | <https://opencensus.io/>                             |
 | OpenCensus SpanID               | <https://opencensus.io/tracing/span/spanid>          |
