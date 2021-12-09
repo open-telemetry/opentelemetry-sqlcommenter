@@ -27,7 +27,7 @@
         - [With DB API Thread Safety](#with-db-api-thread-safety-1)
         - [With Driver Parameter Style](#with-driver-parameter-style-1)
         - [With libpq Version](#with-libpq-version-1)
-        - [With Flask](#with-flask)
+    - [With Flask](#with-flask)
     - [References](#references)
 
 ## Introduction
