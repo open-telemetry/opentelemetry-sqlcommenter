@@ -11,6 +11,7 @@
     - [CommenterCursorFactory](#commentercursorfactory)
       - [with_openCensus=True](#with_opencensustrue)
     - [Expected fields](#expected-fields)
+      - [Default options with flask](#default-options-with-flask)
     - [End to end examples](#end-to-end-examples)
       - [Source code](#source-code)
         - [With OpenCensus](#with-opencensus)
@@ -26,6 +27,7 @@
         - [With DB API Thread Safety](#with-db-api-thread-safety-1)
         - [With Driver Parameter Style](#with-driver-parameter-style-1)
         - [With libpq Version](#with-libpq-version-1)
+        - [With Flask](#with-flask)
     - [References](#references)
 
 ## Introduction
@@ -303,6 +305,7 @@ Examining our Postgresql server logs, with the various options
 ## With Flask
 When coupled with the web framework [Flask](http://flask.pocoo.org), we still provide a function (`google.cloud.sqlcommenter.flask.get_flask_info`) to correlate your web applications with your SQL statements from psycopg2.
 This function is integrated in `CommenterCursorFactory`.
+[![](../../images/flask-logo.png)](../flask/#with-psycopg2)
 ## References
 
 | Resource                        | URL                                                |

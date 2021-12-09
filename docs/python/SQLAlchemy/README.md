@@ -6,6 +6,7 @@
 - [BeforeExecuteFactory](#BeforeExecuteFactory)
 - [Fields](#fields)
 - [End to end examples](#end-to-end-examples)
+- [With Flask](#with-flask)
 - [References](#references)
 
 ## Introduction
@@ -188,8 +189,9 @@ Examining our Postgresql server logs
 /*db_driver='psycopg2'*/
 ```
 
-### With flask
-When coupled with the web framework [flask](http://flask.pocoo.org), we sprovide a class (`BeforeExecuteFactory`) to correlate your web applications with your SQL statements from psycopg2.
+### With Flask
+When coupled with the web framework [flask](http://flask.pocoo.org), we provide a class (`BeforeExecuteFactory`) to correlate your web applications with your SQL statements from psycopg2.
+[![](../../images/flask-logo.png)](../flask/#with-psycopg2)
 ### References
 
 Resource|URL
