@@ -91,10 +91,20 @@ Field|Description|Included by default
 
 #### With OpenCensus
 ```python
-#!/usr/bin/env python3
-
 from sqlalchemy import create_engine, event
 from opentelemetry.sqlcommenter.sqlalchemy.executor import BeforeExecuteFactory
+from opencensus.trace.samplers import AlwaysOnSampler
+from opencensus.trace.tracer import Tracer
+
+DB_URL = '...'  # DB connection info
+
+class NoopExporter():
+    def emit(self, *args, **kwargs):
+        pass
+
+    def export(self, *args, **kwargs):
+        pass
+
 
 def main():
     tracer = Tracer(exporter=NoopExporter, sampler=AlwaysOnSampler())
@@ -107,6 +117,7 @@ def main():
         result = engine.execute('SELECT * FROM polls_question')
         for row in result:
             print(row)
+
 
 if __name__ == '__main__':
     main()
