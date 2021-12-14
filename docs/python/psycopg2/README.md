@@ -27,7 +27,7 @@
         - [With DB API Thread Safety](#with-db-api-thread-safety-1)
         - [With Driver Parameter Style](#with-driver-parameter-style-1)
         - [With libpq Version](#with-libpq-version-1)
-    - [With flask](#with-flask)
+    - [With Flask](#with-flask)
     - [References](#references)
 
 ## Introduction
@@ -302,10 +302,10 @@ Examining our Postgresql server logs, with the various options
 /*libpq_version=110002*/
 ```
 
-## With flask
-When coupled with the web framework [flask](http://flask.pocoo.org), we still provide middleware to correlate your web applications with your SQL statements from psycopg2. Please see this end-to-end guide below:<br>
-[![](../../images/flask-logo.png)](../flask/README.md#with-psycopg2)
-
+## With Flask
+When coupled with the web framework [Flask](http://flask.pocoo.org), we still provide a function (`opentelemetry.sqlcommenter.flask.get_flask_info`) to correlate your web applications with your SQL statements from psycopg2.
+This function is integrated in `CommenterCursorFactory`.
+[![](../../images/flask-logo.png)](../flask/#with-psycopg2)
 ## References
 
 | Resource                        | URL                                                |
