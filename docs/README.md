@@ -70,7 +70,6 @@ We support a variety of languages and frameworks such as:
 [![](images/django-logo.png)](python/django)
 [![](images/psycopg2-logo.png)](python/psycopg2)
 [![](images/sqlalchemy-logo.png)](python/SQLAlchemy)
-[![](images/flask-logo.png)](python/flask)
 [![](images/ruby-logo.png)](ruby)
 [![](images/hibernate-logo.png)](java/hibernate)
 [![](images/spring-logo.png)](java/spring)
