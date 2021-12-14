@@ -60,7 +60,7 @@ To record [OpenCensus](https://opencensus.io/) information [opencensus-ext-djang
 This middleware can be installed by any of the following:
 > pip <br>
   ```
-  pip3 install google-cloud-sqlcommenter
+  pip3 install opentelemetry-sqlcommenter
   ```
   
 > source <br>
@@ -71,20 +71,20 @@ cd python/sqlcommenter-python && python3 setup.py install
 
 ### Enabling it
 
-Please edit your `settings.py` file to include `google.cloud.sqlcommenter.django.middleware.SqlCommenter` in your `MIDDLEWARE` section like this:
+Please edit your `settings.py` file to include `opentelemetry.opentelemetry.sqlcommenter.django.middleware.SqlCommenter` in your `MIDDLEWARE` section like this:
 ```diff
 --- settings.py
 +++ settings.py
 @@ -1,3 +1,4 @@
  MIDDLEWARE = [
-+  'google.cloud.sqlcommenter.django.middleware.SqlCommenter',
++  'opentelemetry.sqlcommenter.django.middleware.SqlCommenter',
    ...
  ]
 ```
 
   
 > *If any middleware execute database queries (that you'd like commented by SqlCommenter), those middleware MUST appear after
->'google.cloud.sqlcommenter.django.middleware.SqlCommenter'*
+>'opentelemetry.sqlcommenter.django.middleware.SqlCommenter'*
 
 
 ## Fields
@@ -130,7 +130,7 @@ Examples are based off the [polls app from the Django introduction tutorial](htt
 # settings.py
 
 MIDDLEWARE = [
-    'sqlcommenter.django.middleware.SqlCommenter',
+    'opentelemetry.sqlcommenter.django.middleware.SqlCommenter',
     ...
 ]
 ```
@@ -165,7 +165,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'opencensus.ext.django.middleware.OpencensusMiddleware',
-    'sqlcommenter.django.middleware.SqlCommenter',
+    'opentelemetry.sqlcommenter.django.middleware.SqlCommenter',
     ...
 ]
 
@@ -205,7 +205,7 @@ def index(request):
 # settings.py
 
 MIDDLEWARE = [
-    'sqlcommenter.django.middleware.SqlCommenter',
+    'opentelemetry.sqlcommenter.django.middleware.SqlCommenter',
     ...
 ]
 
@@ -241,7 +241,7 @@ def index(request):
 # settings.py
 
 MIDDLEWARE = [
-    'sqlcommenter.django.middleware.SqlCommenter',
+    'opentelemetry.sqlcommenter.django.middleware.SqlCommenter',
     ...
 ]
 
@@ -310,5 +310,5 @@ Examining our Postgresql server logs, with the various options
 | Django                 | <https://www.djangoproject.com/>                                                                        |
 | OpenCensus             | <https://opencensus.io/>                                                                                |
 | opencensus-ext-django  | <https://github.com/census-instrumentation/opencensus-python/tree/master/contrib/opencensus-ext-django> |
-| sqlcommenter on PyPi   | <https://pypi.org/project/google-cloud-sqlcommenter>                                                    |
+| sqlcommenter on PyPi   | <https://pypi.org/project/opentelemetry-sqlcommenter>                                                    |
 | sqlcommenter on Github | <https://github.com/open-telemetry/opentelemetry-sqlcommenter>                                                                |

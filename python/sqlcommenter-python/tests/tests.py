@@ -16,7 +16,7 @@
 
 from unittest import TestCase
 
-from google.cloud.sqlcommenter import generate_sql_comment
+from opentelemetry.sqlcommenter import generate_sql_comment
 
 from .opencensus_mock import mock_opencensus_tracer
 

@@ -19,9 +19,9 @@ import logging
 import django
 from django.db import connection
 from django.db.backends.utils import CursorDebugWrapper
-from google.cloud.sqlcommenter import generate_sql_comment
-from google.cloud.sqlcommenter.opencensus import get_opencensus_values
-from google.cloud.sqlcommenter.opentelemetry import get_opentelemetry_values
+from opentelemetry.sqlcommenter import generate_sql_comment
+from opentelemetry.sqlcommenter.opencensus import get_opencensus_values
+from opentelemetry.sqlcommenter.opentelemetry import get_opentelemetry_values
 
 django_version = django.get_version()
 logger = logging.getLogger(__name__)

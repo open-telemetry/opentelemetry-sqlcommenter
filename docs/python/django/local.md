@@ -13,20 +13,20 @@
 
 This guide will help you add [sqlcommenter](https://github.com/open-telemetry/opentelemetry-sqlcommenter) to your Django applications running locally.
 
-Please see the reference for the fields added in the SQL comments [google-cloud-sqlcommenter.Fields](README.md/#fields)
+Please see the reference for the fields added in the SQL comments [opentelemetry-sqlcommenter.Fields](README.md/#fields)
 
 ## Requirements
 
 | Steps                     | Resource                                             |
 | ------------------------- | ---------------------------------------------------- |
 | Django                    | <https://docs.djangoproject.com/en/stable/intro/>      |
-| google-cloud-sqlcommenter | <https://pypi.org/project/google-cloud-sqlcommenter>   |
+| opentelemetry-sqlcommenter | <https://pypi.org/project/opentelemetry-sqlcommenter>   |
 | Django 2.X                | <https://docs.djangoproject.com/en/stable/faq/install> |
 | Python 3.X                | <https://www.python.org/downloads/>                    |
 
 ## Addition to your code
 
-Firstly, please install [google-cloud-sqlcommenter](README.md#installation).
+Firstly, please install [opentelemetry-sqlcommenter](README.md#installation).
 
 For any Django deployment, we can just edit our settings.py file and update the `MIDDLEWARE` section as per:
 
@@ -34,13 +34,13 @@ For any Django deployment, we can just edit our settings.py file and update the 
 # settings.py
 
 MIDDLEWARE = [
-  'google.cloud.sqlcommenter.django.middleware.SqlCommenter',
+  'opentelemetry.sqlcommenter.django.middleware.SqlCommenter',
   ...
 ]
 ```
 
 >If any middleware execute database queries (that you'd like commented by SqlCommenter), those middleware MUST appear after
-'google.cloud.sqlcommenter.django.middleware.SqlCommenter'*
+'opentelemetry.sqlcommenter.django.middleware.SqlCommenter'*
 
 
 ## References

@@ -18,7 +18,7 @@ import json
 
 import flask
 import pytest
-from google.cloud.sqlcommenter.flask import get_flask_info
+from opentelemetry.sqlcommenter.flask import get_flask_info
 
 from .app import app
 
