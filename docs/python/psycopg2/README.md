@@ -305,7 +305,7 @@ Examining our Postgresql server logs, with the various options
 ## With Flask
 When coupled with the web framework [Flask](http://flask.pocoo.org), we still provide a function (`google.cloud.sqlcommenter.flask.get_flask_info`) to correlate your web applications with your SQL statements from psycopg2.
 This function is integrated in `CommenterCursorFactory`.
-[![](../../images/flask-logo.png)](../flask/#with-psycopg2)
+[![](../../images/flask-logo.png)](http://flask.pocoo.org)
 ## References
 
 | Resource                        | URL                                                |

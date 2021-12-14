@@ -191,7 +191,7 @@ Examining our Postgresql server logs
 
 ### With Flask
 When coupled with the web framework [flask](http://flask.pocoo.org), we provide a class (`BeforeExecuteFactory`) to correlate your web applications with your SQL statements from psycopg2.
-[![](../../images/flask-logo.png)](../flask/#with-psycopg2)
+[![](../../images/flask-logo.png)](http://flask.pocoo.org)
 ### References
 
 Resource|URL
