@@ -1,6 +1,6 @@
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/google-cloud-sqlcommenter)
-![PyPI](https://img.shields.io/pypi/v/google-cloud-sqlcommenter)
-![PyPI - Django Version](https://img.shields.io/pypi/djversions/google-cloud-sqlcommenter)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/opentelemetry-sqlcommenter)
+![PyPI](https://img.shields.io/pypi/v/opentelemetry-sqlcommenter)
+![PyPI - Django Version](https://img.shields.io/pypi/djversions/opentelemetry-sqlcommenter)
 
 # sqlcommenter
 
@@ -13,20 +13,7 @@ Python modules for popular projects that add meta info to your SQL queries as co
 ## Local Install
 
 ```shell
-pip3 install --user google-cloud-sqlcommenter
-```
-
-If you'd like to record the OpenCensus trace context as well, just install it:
-
-```shell
-pip3 install google-cloud-sqlcommenter[opencensus]
-```
-
-If you'd like to record the OpenTelemetry trace context as well (Python 3+ only),
-just install it:
-
-```shell
-pip3 install google-cloud-sqlcommenter[opentelemetry]
+pip3 install --user opentelemetry-sqlcommenter
 ```
 
 ## Usage
@@ -37,7 +24,7 @@ Add the provided Django middleware to your Django project's settings. All querie
 
 ```python
 MIDDLEWARE = [
-  'google.cloud.sqlcommenter.django.middleware.SqlCommenter',
+  'opentelemetry.sqlcommenter.django.middleware.SqlCommenter',
   ...
 ]
 ```
@@ -63,7 +50,7 @@ Attach the provided event listener to the `before_cursor_execute` event of the d
 
 ```python
 import sqlalchemy
-from google.cloud.sqlcommenter.sqlalchemy.executor import BeforeExecuteFactory
+from opentelemetry.sqlcommenter.sqlalchemy.executor import BeforeExecuteFactory
 
 engine = sqlalchemy.create_engine(...)
 listener = BeforeExecuteFactory(
@@ -91,7 +78,7 @@ Use the provided cursor factory to generate database cursors. All queries execut
 
 ```python
 import psycopg2
-from google.cloud.sqlcommenter.psycopg2.extension import CommenterCursorFactory
+from opentelemetry.sqlcommenter.psycopg2.extension import CommenterCursorFactory
 
 cursor_factory = CommenterCursorFactory(
     with_db_driver=True,
@@ -147,6 +134,7 @@ installed in the python environment.
 For `opentelemetry` to work correctly, note that [OpenTelemetry for
 Python](https://github.com/open-telemetry/opentelemetry-python) must be
 installed in the python environment.
+
 
 #### [3] `traceparent/tracestate`
 Because the W3C TraceContext's `traceparent` and `tracestate` are quite ephemeral per request, including these attributes can have a negative impact on query caching.

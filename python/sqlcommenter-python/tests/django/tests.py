@@ -19,7 +19,7 @@ from django.db import connection
 from django.http import HttpRequest
 from django.test import TestCase, override_settings, modify_settings
 from django.urls import resolve, reverse
-from google.cloud.sqlcommenter.django.middleware import SqlCommenter, QueryWrapper
+from opentelemetry.sqlcommenter.django.middleware import SqlCommenter, QueryWrapper
 
 from ..compat import mock
 from ..opencensus_mock import mock_opencensus_tracer
@@ -111,7 +111,7 @@ class Tests(TestCase):
 
     @modify_settings(MIDDLEWARE={
         'prepend': 'tests.django.tests.TestMiddleware',
-        'append': 'google.cloud.sqlcommenter.django.middleware.SqlCommenter',
+        'append': 'opentelemetry.sqlcommenter.django.middleware.SqlCommenter',
     })
     def test_multi_execute_wrappers(self):
         # Raises error if execute_wrappers fails
@@ -150,7 +150,7 @@ class Tests(TestCase):
 
     def test_both_opentelemetry_and_opencensus_warn(self):
         with mock.patch(
-            "google.cloud.sqlcommenter.django.middleware.logger"
+            "opentelemetry.sqlcommenter.django.middleware.logger"
         ) as logger_mock, self.settings(
             SQLCOMMENTER_WITH_OPENCENSUS=True
         ), self.settings(

@@ -17,7 +17,7 @@
 from unittest import TestCase
 
 import six
-from google.cloud.sqlcommenter.opentelemetry import get_opentelemetry_values
+from opentelemetry.sqlcommenter.opentelemetry import get_opentelemetry_values
 
 from ..compat import mock, skipIfPy2
 from ..opentelemetry_mock import mock_opentelemetry_context
@@ -26,7 +26,7 @@ from ..opentelemetry_mock import mock_opentelemetry_context
 @skipIfPy2
 class OpenTelemetryTests(TestCase):
     def test_not_installed(self):
-        with mock.patch("google.cloud.sqlcommenter.opentelemetry.propagator", new=None):
+        with mock.patch("opentelemetry.sqlcommenter.opentelemetry.propagator", new=None):
             with six.assertRaisesRegex(
                 self, ImportError, "OpenTelemetry is not installed"
             ):
