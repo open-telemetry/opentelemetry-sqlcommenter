@@ -1,5 +1,5 @@
 {
-  "name": "@google-cloud/sqlcommenter-knex",
+  "name": "@opentelemetry/sqlcommenter-knex",
   "version": "1.0.0",
   "description": "Middleware and wrappers to correlate SQL statements from Knex.js and Express.js",
   "main": "index.js",
@@ -35,8 +35,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "google/sqlcommenter"
+    "url": "open-telemetry/opentelemetry-sqlcommenter"
   },
-  "author": "Google, LLC.",
-  "license": "Apache-2.0"
+  "author": "OpenTelemetry Authors",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://open-telemetry.github.io/opentelemetry-sqlcommenter/node-js/knex/"
 }
