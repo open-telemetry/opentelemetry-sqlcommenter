@@ -61,17 +61,17 @@ Please read [installing sqlcommenter-nodejs from source](../#from-source)
 Add to your package.json the dependency
 ```json
 {
-    "@google-cloud/sqlcommenter-knex": "*"
+    "@opentelemetry/sqlcommenter-knex": "*"
 }
 ```
 and then run `npm install` to get the latest version or 
 ```shell
-npm install @google-cloud/sqlcommenter-knex --save
+npm install @opentelemetry/sqlcommenter-knex --save
 ```
 ## Usage
 ### Plain knex wrapper
 ```javascript
-const {wrapMainKnex} = require('@google-cloud/sqlcommenter-knex');
+const {wrapMainKnex} = require('@opentelemetry/sqlcommenter-knex');
 const Knex = require('knex');
 wrapMainKnex(Knex);
 
@@ -82,7 +82,7 @@ const knex = Knex(options);
 ### Express middleware
 This wrapper/middleware can be used as is or better with [express.js](https://expressjs.com/)
 ```javascript
-const {wrapMainKnexAsMiddleware} = require('@google-cloud/sqlcommenter-knex');
+const {wrapMainKnexAsMiddleware} = require('@opentelemetry/sqlcommenter-knex');
 const Knex = require('knex');
 const app = require('express')();
 
@@ -184,7 +184,7 @@ const tracing = require('@opencensus/nodejs');
 const {B3Format} = require('@opencensus/propagation-b3');
 const {ZipkinTraceExporter} = require('@opencensus/exporter-zipkin');
 const Knex = require('knex'); // Knex to be wrapped say v0.0.1
-const {wrapMainKnexAsMiddleware} = require('@google-cloud/sqlcommenter-knex');
+const {wrapMainKnexAsMiddleware} = require('@opentelemetry/sqlcommenter-knex');
 const express = require('express');
 
 const exporter = new ZipkinTraceExporter({
@@ -242,10 +242,10 @@ const { NodeTracerProvider } = require("@opentelemetry/node");
 const { BatchSpanProcessor } = require("@opentelemetry/tracing");
 const {
   TraceExporter,
-} = require("@google-cloud/opentelemetry-cloud-trace-exporter");
+} = require("@opentelemetry/opentelemetry-cloud-trace-exporter");
 
 const tracerProvider = new NodeTracerProvider();
-// Export to Google Cloud Trace
+// Export to Opentelemetry Trace
 tracerProvider.addSpanProcessor(
   new BatchSpanProcessor(new TraceExporter({ logger }), {
     bufferSize: 500,
@@ -258,7 +258,7 @@ tracerProvider.register();
 // that it instruments
 const express = require("express");
 const Knex = require("knex");
-const { wrapMainKnexAsMiddleware } = require("@google-cloud/sqlcommenter-knex");
+const { wrapMainKnexAsMiddleware } = require("@opentelemetry/sqlcommenter-knex");
 
 const knexOptions = {
     client: 'postgresql',
@@ -305,7 +305,7 @@ app.listen(port, () => console.log(`Application listening on ${port}`));
 ```javascript
 // In file app.js.
 const Knex = require('knex'); // Knex to be wrapped say v0.0.1
-const {wrapMainKnexAsMiddleware} = require('@google-cloud/sqlcommenter-knex');
+const {wrapMainKnexAsMiddleware} = require('@opentelemetry/sqlcommenter-knex');
 const express = require('express');
 
 const options = {
@@ -341,7 +341,7 @@ app.listen(port, () => console.log(`Application listening on ${port}`));
 ```javascript
 // In file app.js
 const Knex = require('knex'); // Knex to be wrapped say v0.0.1
-const {wrapMainKnexAsMiddleware} = require('@google-cloud/sqlcommenter-knex');
+const {wrapMainKnexAsMiddleware} = require('@opentelemetry/sqlcommenter-knex');
 const express = require('express');
 
 const options = {
@@ -379,7 +379,7 @@ const tracing = require('@opencensus/nodejs');
 const {B3Format} = require('@opencensus/propagation-b3');
 const {ZipkinTraceExporter} = require('@opencensus/exporter-zipkin');
 const Knex = require('knex'); // Knex to be wrapped say v0.0.1
-const {wrapMainKnexAsMiddleware} = require('@google-cloud/sqlcommenter-knex');
+const {wrapMainKnexAsMiddleware} = require('@opentelemetry/sqlcommenter-knex');
 const express = require('express');
 
 const exporter = new ZipkinTraceExporter({
@@ -466,5 +466,5 @@ On making a request to that server at `http://localhost:3000/polls/1000`, the Po
 
 | Resource                               | URL                                                           |
 |----------------------------------------|---------------------------------------------------------------|
-| @google-cloud/sqlcommenter-knex on npm | <https://www.npmjs.com/package/@google-cloud/sqlcommenter-knex> |
+| @opentelemetry/sqlcommenter-knex on npm | <https://www.npmjs.com/package/@opentelemetry/sqlcommenter-knex> |
 | express.js                             | <https://expressjs.com/>                                        |

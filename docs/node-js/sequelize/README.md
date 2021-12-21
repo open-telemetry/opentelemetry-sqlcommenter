@@ -67,19 +67,19 @@ Please read [installing sqlcommenter-nodejs from source](../#from-source)
 Add to your package.json the dependency
 ```json
 {
-    "@google-cloud/sqlcommenter-sequelize": "*"
+    "@opentelemetry/sqlcommenter-sequelize": "*"
 }
 ```
 and then run `npm install` to get the latest version or
 
 ```shell
-npm install @google-cloud/sqlcommenter-sequelize --save
+npm install @opentelemetry/sqlcommenter-sequelize --save
 ```
 
 ## Usage
 ### Plain sequelize wrapper
 ```javascript
-const {wrapSequelize} = require('@google-cloud/sqlcommenter-sequelize');
+const {wrapSequelize} = require('@opentelemetry/sqlcommenter-sequelize');
 const Sequelize = require('sequelize');
 
 // Create the sequelize client.
@@ -91,7 +91,7 @@ wrapSequelize(sequelize);
 ### Express middleware
 This wrapper/middleware can be used as is or better with [express.js](https://expressjs.com/)
 ```javascript
-const {wrapSequelizeAsMiddleware} = require('@google-cloud/sqlcommenter-sequelize');
+const {wrapSequelizeAsMiddleware} = require('@opentelemetry/sqlcommenter-sequelize');
 const Sequelize = require('sequelize');
 const sequelize = new Sequelize(options);
 const app = require('express')();
@@ -194,7 +194,7 @@ Check out a full express + opentelemetry example
 const tracing = require('@opencensus/nodejs');
 const {B3Format} = require('@opencensus/propagation-b3');
 const {ZipkinTraceExporter} = require('@opencensus/exporter-zipkin');
-const {wrapSequelizeAsMiddleware} = require('@google-cloud/sqlcommenter-sequelize');
+const {wrapSequelizeAsMiddleware} = require('@opentelemetry/sqlcommenter-sequelize');
 const Sequelize = require('sequelize');
 const express = require('express');
 
@@ -245,10 +245,10 @@ const { NodeTracerProvider } = require("@opentelemetry/node");
 const { BatchSpanProcessor } = require("@opentelemetry/tracing");
 const {
   TraceExporter,
-} = require("@google-cloud/opentelemetry-cloud-trace-exporter");
+} = require("@opentelemetry/opentelemetry-cloud-trace-exporter");
 
 const tracerProvider = new NodeTracerProvider();
-// Export to Google Cloud Trace
+// Export to Opentelemetry Trace
 tracerProvider.addSpanProcessor(
   new BatchSpanProcessor(new TraceExporter({ logger }), {
     bufferSize: 500,
@@ -262,7 +262,7 @@ tracerProvider.register();
 const { Sequelize } = require("sequelize");
 const {
   wrapSequelizeAsMiddleware,
-} = require("@google-cloud/sqlcommenter-sequelize");
+} = require("@opentelemetry/sqlcommenter-sequelize");
 
 const sequelize = new Sequelize("postgres://user:pass@example.com:5432/dbname");
 
@@ -305,7 +305,7 @@ app.listen(port, () => console.log(`Application listening on ${port}`));
 ```javascript
 // In file app.js.
 const Sequelize = require('sequelize');
-const {wrapSequelizeAsMiddleware} = require('@google-cloud/sqlcommenter-sequelize');
+const {wrapSequelizeAsMiddleware} = require('@opentelemetry/sqlcommenter-sequelize');
 const express = require('express');
 
 // Using a connection URI
@@ -333,7 +333,7 @@ app.listen(port, () => console.log(`Application listening on ${port}`));
 ```javascript
 // In file app.js
 const Sequelize = require('sequelize');
-const {wrapSequelizeAsMiddleware} = require('@google-cloud/sqlcommenter-sequelize');
+const {wrapSequelizeAsMiddleware} = require('@opentelemetry/sqlcommenter-sequelize');
 const express = require('express');
 
 // Using a connection URI
@@ -367,7 +367,7 @@ const tracing = require('@opencensus/nodejs');
 const {B3Format} = require('@opencensus/propagation-b3');
 const {ZipkinTraceExporter} = require('@opencensus/exporter-zipkin');
 const Sequelize = require('sequelize');
-const {wrapSequelizeAsMiddleware} = require('@google-cloud/sqlcommenter-sequelize');
+const {wrapSequelizeAsMiddleware} = require('@opentelemetry/sqlcommenter-sequelize');
 const express = require('express');
 
 const exporter = new ZipkinTraceExporter({
@@ -459,5 +459,5 @@ On making a request to that server at `http://localhost:3000/polls/1000`, the Po
 
 | Resource                                    | URL                                                                |
 |---------------------------------------------|--------------------------------------------------------------------|
-| @google-cloud/sqlcommenter-sequelize on npm | <https://www.npmjs.com/package/@google-cloud/sqlcommenter-sequelize> |
+| @opentelemetry/sqlcommenter-sequelize on npm | <https://www.npmjs.com/package/@opentelemetry/sqlcommenter-sequelize> |
 | express.js                                  | <https://expressjs.com/>                                             |
