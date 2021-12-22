@@ -1,6 +1,6 @@
 {
   "name": "@opentelemetry/sqlcommenter-knex",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Middleware and wrappers to correlate SQL statements from Knex.js and Express.js",
   "main": "index.js",
   "directories": {
