@@ -1,6 +1,6 @@
 {
   "name": "@opentelemetry/sqlcommenter-sequelize",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Middleware and wrappers to correlate SQL statements from Sequelize.js and Express.js",
   "main": "index.js",
   "directories": {
