@@ -68,7 +68,7 @@ for example to install `@opentelemetry/sqlcommenter-knex` in a given location, r
 # install 
 > npm install /path/to/sqlcommenter-nodejs/packages/knex
 
-+ @opentelemetry/sqlcommenter-knex@0.0.1
++ @opentelemetry/sqlcommenter-knex@0.1.0
 ```
 
 ### Verify Installation
@@ -78,6 +78,6 @@ If package is properly installed, running `npm list <package-name>` will output 
 > npm list @opentelemetry/sqlcommenter-knex
 
 project@0.0.0 path/to/project
-└── @opentelemetry/sqlcommenter-knex@0.0.1  -> /path/to/sqlcommenter-nodejs/packages/knex
+└── @opentelemetry/sqlcommenter-knex@0.1.0  -> /path/to/sqlcommenter-nodejs/packages/knex
 ```
 Inspecting the `package.json` file after installation should also show the installed pacakge.
