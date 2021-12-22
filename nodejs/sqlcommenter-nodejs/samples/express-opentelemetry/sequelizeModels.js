@@ -15,7 +15,7 @@
 const { Sequelize, DataTypes } = require("sequelize");
 const {
   wrapSequelizeAsMiddleware,
-} = require("@google-cloud/sqlcommenter-sequelize");
+} = require("@opentelemetry/sqlcommenter-sequelize");
 
 const sequelize = new Sequelize(
   "postgres",

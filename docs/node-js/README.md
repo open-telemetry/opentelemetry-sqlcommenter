@@ -63,21 +63,21 @@ Each folder in the `packages` directory can be installed by running
 ```shell
 npm install <path/to/package>
 ```
-for example to install `@google-cloud/sqlcommenter-knex` in a given location, run `npm install /path/to/sqlcommenter-nodejs/packages/knex`. Same for every package(folder) in the `packages` directory.
+for example to install `@opentelemetry/sqlcommenter-knex` in a given location, run `npm install /path/to/sqlcommenter-nodejs/packages/knex`. Same for every package(folder) in the `packages` directory.
 ```shell
 # install 
 > npm install /path/to/sqlcommenter-nodejs/packages/knex
 
-+ @google-cloud/sqlcommenter-knex@0.0.1
++ @opentelemetry/sqlcommenter-knex@0.0.1
 ```
 
 ### Verify Installation
-If package is properly installed, running `npm list <package-name>` will output details of the package. Let's verify the installation of `@google-cloud/sqlcommenter-knex` below:
+If package is properly installed, running `npm list <package-name>` will output details of the package. Let's verify the installation of `@opentelemetry/sqlcommenter-knex` below:
 ```shell
 # verify
-> npm list @google-cloud/sqlcommenter-knex
+> npm list @opentelemetry/sqlcommenter-knex
 
 project@0.0.0 path/to/project
-└── @google-cloud/sqlcommenter-knex@0.0.1  -> /path/to/sqlcommenter-nodejs/packages/knex
+└── @opentelemetry/sqlcommenter-knex@0.0.1  -> /path/to/sqlcommenter-nodejs/packages/knex
 ```
 Inspecting the `package.json` file after installation should also show the installed pacakge.

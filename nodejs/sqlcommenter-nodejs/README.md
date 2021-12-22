@@ -17,5 +17,5 @@ and then you can run respectively
 
 Middleware|Command|URL
 ---|---|---
-Knex.js|`npm install @google-cloud/sqlcommenter-knex`|https://www.npmjs.com/package/@google-cloud/sqlcommenter-knex
-Sequelize.js|`npm install @google-cloud/sqlcommenter-sequelize`|https://www.npmjs.com/package/@google-cloud/sqlcommenter-sequelize
+Knex.js|`npm install @opentelemetry/sqlcommenter-knex`|https://www.npmjs.com/package/@opentelemetry/sqlcommenter-knex
+Sequelize.js|`npm install @opentelemetry/sqlcommenter-sequelize`|https://www.npmjs.com/package/@opentelemetry/sqlcommenter-sequelize

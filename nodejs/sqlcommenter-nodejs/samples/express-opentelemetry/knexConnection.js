@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-const { wrapMainKnexAsMiddleware } = require("@google-cloud/sqlcommenter-knex");
+const { wrapMainKnexAsMiddleware } = require("@opentelemetry/sqlcommenter-knex");
 const Knex = require("knex");
 
 const sqlcommenterMiddleware = wrapMainKnexAsMiddleware(
