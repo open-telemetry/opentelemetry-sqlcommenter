@@ -1,0 +1,40 @@
+name: Publish Python Package to PYPI
+
+on:
+  release:
+    types: [published]
+    branches:
+      - python-sqlcommenter
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.7'
+    - name: Install dependencies
+      working-directory: ./sqlcommenter-python
+      run: |
+        python -m pip install --upgrade pip
+        pip install build
+    - name: Build package
+      working-directory: ./sqlcommenter-python
+      run: python -m build
+    - name: Publish distribution package to test PYPI
+      uses: pypa/gh-action-pypi-publish@master
+      with:
+        user: __token__
+        password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+        repository_url: https://test.pypi.org/legacy/
+        packages_dir: sqlcommenter-python/dist/
+        verbose: true
+    - name: Publish distribution 📦 to PyPI
+      uses: pypa/gh-action-pypi-publish@master
+      with:
+        user: __token__
+        password: ${{ secrets.PYPI_API_TOKEN }}
+        packages_dir: sqlcommenter-python/dist/
+        verbose: true
