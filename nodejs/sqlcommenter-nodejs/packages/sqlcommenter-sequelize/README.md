@@ -7,10 +7,10 @@ It supports Node v6 and above to use ES6 features.
 
 ### Installation
 ```shell
-npm install @google-cloud/sqlcommenter-sequelize
+npm install @opentelemetry/sqlcommenter-sequelize
 ```
 
 ### Usage
 ```javascript
-const ssequelize = require('@google-cloud/sqlcommenter-sequelize');
+const ssequelize = require('@opentelemetry/sqlcommenter-sequelize');
 ```
