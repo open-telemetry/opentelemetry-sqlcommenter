@@ -48,7 +48,7 @@ tracestate='rojo%253D00f067aa0ba902b7%2Ccongo%253Dt61rcWkgMzE''*/
 If your're using Spring 5, then you can add the `SpringSQLCommenterInterceptor` as follows:
 
 ```java
-import com.google.cloud.sqlcommenter.interceptors.SpringSQLCommenterInterceptor;
+import io.opentelemetry.sqlcommenter.interceptors.SpringSQLCommenterInterceptor;
 
 @EnableWebMvc
 @Configuration
@@ -70,7 +70,7 @@ If you're using an older version of Spring, then your `WebConfig` class needs to
 class instead:
 
 ```java
-import com.google.cloud.sqlcommenter.interceptors.SpringSQLCommenterInterceptor;
+import io.opentelemetry.sqlcommenter.interceptors.SpringSQLCommenterInterceptor;
 
 @EnableWebMvc
 @Configuration
@@ -94,7 +94,7 @@ You can also add the interceptor as a bean in your XML configuration:
 
 ```xml
 <mvc:interceptors>
-    <bean class="com.google.cloud.sqlcommenter.interceptors.SpringSQLCommenterInterceptor"></bean>
+    <bean class="io.opentelemetry.sqlcommenter.interceptors.SpringSQLCommenterInterceptor"></bean>
 </mvc:interceptors>
 ```
 
@@ -103,7 +103,7 @@ or alternatively just for a specific method
 <mvc:interceptors>
     <mvc:interceptor>
         <mvc:mapping path="/flights"></mvc:mapping>
-        <bean class="com.google.cloud.sqlcommenter.interceptors.SpringSQLCommenterInterceptor"></bean>
+        <bean class="io.opentelemetry.sqlcommenter.interceptors.SpringSQLCommenterInterceptor"></bean>
     </mvc:interceptor>
 </mvc:interceptors>
 ```
@@ -113,7 +113,7 @@ or alternatively just for a specific method
 If you're using Hibernate via JPA, then you can simply set the `hibernate.session_factory.statement_inspector` configuration property in the `persistence.xml` configuration file:
 
 ```xml
-<property name="hibernate.session_factory.statement_inspector" value="com.google.cloud.sqlcommenter.schibernate.SCHibernate" />
+<property name="hibernate.session_factory.statement_inspector" value="io.opentelemetry.sqlcommenter.schibernate.SCHibernate" />
 ```
 
 If you're using Hibernate via Spring, then you might not use a `persistence.xml` configuration file, in which case,
