@@ -7,8 +7,8 @@ require 'sqlcommenter_rails/version'
 Gem::Specification.new do |spec| # rubocop:disable Metrics/BlockLength
   spec.name = 'sqlcommenter_rails'
   spec.version = SqlCommenterRails::VERSION
-  spec.authors = ['Google developers']
-  spec.email = ['sqlcommenter@googlegroups.com']
+  spec.authors = ['OpenTelemetry Authors']
+  spec.email = ['cncf-opentelemetry-contributors@lists.cncf.io']
 
   spec.summary = 'sqlcommenter for Ruby on Rails'
   # spec.homepage = "TODO: Put your gem's website or public repo URL here."
