@@ -242,10 +242,10 @@ const { NodeTracerProvider } = require("@opentelemetry/node");
 const { BatchSpanProcessor } = require("@opentelemetry/tracing");
 const {
   TraceExporter,
-} = require("@opentelemetry/opentelemetry-cloud-trace-exporter");
+} = require("@google-cloud/opentelemetry-cloud-trace-exporter");
 
 const tracerProvider = new NodeTracerProvider();
-// Export to Opentelemetry Trace
+// Export to Google Cloud Trace
 tracerProvider.addSpanProcessor(
   new BatchSpanProcessor(new TraceExporter({ logger }), {
     bufferSize: 500,
