@@ -135,6 +135,5 @@ For `opentelemetry` to work correctly, note that [OpenTelemetry for
 Python](https://github.com/open-telemetry/opentelemetry-python) must be
 installed in the python environment.
 
-
 #### [3] `traceparent/tracestate`
 Because the W3C TraceContext's `traceparent` and `tracestate` are quite ephemeral per request, including these attributes can have a negative impact on query caching.

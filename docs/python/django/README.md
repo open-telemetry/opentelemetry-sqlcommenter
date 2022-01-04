@@ -71,7 +71,7 @@ cd python/sqlcommenter-python && python3 setup.py install
 
 ### Enabling it
 
-Please edit your `settings.py` file to include `opentelemetry.opentelemetry.sqlcommenter.django.middleware.SqlCommenter` in your `MIDDLEWARE` section like this:
+Please edit your `settings.py` file to include `opentelemetry.sqlcommenter.django.middleware.SqlCommenter` in your `MIDDLEWARE` section like this:
 ```diff
 --- settings.py
 +++ settings.py
