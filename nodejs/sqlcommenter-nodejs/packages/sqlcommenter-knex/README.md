@@ -7,10 +7,10 @@ It supports Node v6 and above to use ES6 features.
 
 ### Installation
 ```shell
-npm install @google-cloud/sqlcommenter-knex
+npm install @opentelemetry/sqlcommenter-knex
 ```
 
 ### Usage
 ```javascript
-const sknex = require('@google-cloud/sqlcommenter-knex');
+const sknex = require('@opentelemetry/sqlcommenter-knex');
 ```
