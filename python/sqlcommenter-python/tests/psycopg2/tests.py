@@ -18,8 +18,8 @@ from unittest import TestCase
 
 import psycopg2.extensions
 from forbiddenfruit import curse
-from google.cloud.sqlcommenter import url_quote
-from google.cloud.sqlcommenter.psycopg2.extension import CommenterCursorFactory
+from opentelemetry.sqlcommenter import url_quote
+from opentelemetry.sqlcommenter.psycopg2.extension import CommenterCursorFactory
 
 from ..compat import mock
 from ..opencensus_mock import mock_opencensus_tracer
@@ -91,7 +91,7 @@ class Tests(Psycopg2TestCase):
 
     def test_both_opentelemetry_and_opencensus_warn(self):
         with mock.patch(
-            "google.cloud.sqlcommenter.psycopg2.extension.logger"
+            "opentelemetry.sqlcommenter.psycopg2.extension.logger"
         ) as logger_mock, mock_opencensus_tracer(), mock_opentelemetry_context():
             self.assertSQL(
                 "SELECT 1; /*traceparent='00-000000000000000000000000deadbeef-000000000000beef-00',"
@@ -109,27 +109,27 @@ class FlaskTests(Psycopg2TestCase):
         'route': '/',
     }
 
-    @mock.patch('google.cloud.sqlcommenter.psycopg2.extension.get_flask_info', return_value=flask_info)
+    @mock.patch('opentelemetry.sqlcommenter.psycopg2.extension.get_flask_info', return_value=flask_info)
     def test_all_data(self, get_info):
         self.assertSQL(
             "SELECT 1; /*controller='c',framework='flask',route='/'*/",
         )
 
-    @mock.patch('google.cloud.sqlcommenter.psycopg2.extension.get_flask_info', return_value=flask_info)
+    @mock.patch('opentelemetry.sqlcommenter.psycopg2.extension.get_flask_info', return_value=flask_info)
     def test_framework_disabled(self, get_info):
         self.assertSQL(
             "SELECT 1; /*controller='c',route='/'*/",
             with_framework=False,
         )
 
-    @mock.patch('google.cloud.sqlcommenter.psycopg2.extension.get_flask_info', return_value=flask_info)
+    @mock.patch('opentelemetry.sqlcommenter.psycopg2.extension.get_flask_info', return_value=flask_info)
     def test_controller_disabled(self, get_info):
         self.assertSQL(
             "SELECT 1; /*framework='flask',route='/'*/",
             with_controller=False,
         )
 
-    @mock.patch('google.cloud.sqlcommenter.psycopg2.extension.get_flask_info', return_value=flask_info)
+    @mock.patch('opentelemetry.sqlcommenter.psycopg2.extension.get_flask_info', return_value=flask_info)
     def test_route_disabled(self, get_info):
         self.assertSQL(
             "SELECT 1; /*controller='c',framework='flask'*/",

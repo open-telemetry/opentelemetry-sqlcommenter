@@ -18,10 +18,10 @@ import logging
 
 import psycopg2
 import psycopg2.extensions
-from google.cloud.sqlcommenter import generate_sql_comment
-from google.cloud.sqlcommenter.flask import get_flask_info
-from google.cloud.sqlcommenter.opencensus import get_opencensus_values
-from google.cloud.sqlcommenter.opentelemetry import get_opentelemetry_values
+from opentelemetry.sqlcommenter import generate_sql_comment
+from opentelemetry.sqlcommenter.flask import get_flask_info
+from opentelemetry.sqlcommenter.opencensus import get_opencensus_values
+from opentelemetry.sqlcommenter.opentelemetry import get_opentelemetry_values
 
 logger = logging.getLogger(__name__)
 
