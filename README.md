@@ -1,6 +1,6 @@
 SQLCommenter components for various languages
 
-**This repository is the temporary repository toward the migration to `contrib` repositories for each languages. See details in these tickets. [[1](https://github.com/open-telemetry/community/issues/783)][[2](https://github.com/open-telemetry/opentelemetry-java-contrib/issues/205)]**
+**This repository is the temporary repository toward the migration to `contrib/instrumentation` repositories for each languages. See details in these tickets. [[1](https://github.com/open-telemetry/community/issues/783)][[2](https://github.com/open-telemetry/opentelemetry-java-contrib/issues/205)]**
 
  [Documentation](https://google.github.io/sqlcommenter/)
 
