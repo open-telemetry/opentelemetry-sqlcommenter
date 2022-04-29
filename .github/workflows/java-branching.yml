@@ -1,0 +1,22 @@
+name: Java CI
+on:
+  push:
+    paths:
+      - 'java/**'
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        submodules: recursive
+    - name: Push to branch
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        publish_dir: ./java
+        publish_branch: java-sqlcommenter
