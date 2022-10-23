@@ -1,18 +1,21 @@
 # sqlcommenter_rails demo
 
+**If you are on Rails version 7.0 and up, refer to the [sqlcommenter-ruby README] instead**
+
 This is a demo [Rails API] application to demonstrate [sqlcommenter_rails] integration.
 
 [Rails API]: https://guides.rubyonrails.org/api_app.html
 [sqlcommenter_rails]: https://github.com/open-telemetry/opentelemetry-sqlcommenter/ruby/sqlcommenter-ruby/sqlcommenter_rails
+[sqlcommenter-ruby README]: https://github.com/open-telemetry/opentelemetry-sqlcommenter/blob/main/ruby/sqlcommenter-ruby/README.md
 
 ## Setup
 
 Install [Ruby v2.6.3](https://www.ruby-lang.org/en/news/2019/04/17/ruby-2-6-3-released/) if you don't already have it installed.
 
-This demo requires functionality provided by an [open PR](https://github.com/basecamp/marginalia/pull/89) to [marginalia](https://github.com/basecamp/marginalia). Install the PR by cloning [glebm's fork of marginalia](https://github.com/glebm/marginalia) one directory above this demo. Starting from the root directory of this demo:
+This demo requires functionality provided by an [open PR](https://github.com/basecamp/marginalia/pull/130) to [marginalia](https://github.com/basecamp/marginalia). Install the PR by cloning [modulitos' fork of marginalia](https://github.com/modulitos/marginalia) one directory above this demo. Starting from the root directory of this demo:
 
 ```bash
-git clone https://github.com/glebm/marginalia.git ../marginalia
+git clone https://github.com/modulitos/marginalia.git ../marginalia
 git -C ../marginalia checkout formatting
 ```
 
