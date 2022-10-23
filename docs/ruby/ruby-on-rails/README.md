@@ -2,17 +2,31 @@
 ![](../../images/activerecord_marginalia-logo.png)
 
 - [Ruby on Rails](#ruby-on-rails)
-  - [Introduction](#introduction)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Fields](#fields)
-  - [End to end example](#end-to-end-example)
-    - [Results](#results)
-      - [GET /posts](#get-posts)
-      - [POST /posts](#post-posts)
-  - [References](#references)
+  - [Rails 7.1 and up](#rails-7.1-and-up)
+  - [Rails 7.0](#rails-7.0)
+  - [Rails 6.1 and under](#rails-6.1-and-under)
+    - [Introduction](#introduction)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Fields](#fields)
+    - [End to end example](#end-to-end-example)
+      - [Results](#results)
+        - [GET /posts](#get-posts)
+        - [POST /posts](#post-posts)
+    - [References](#references)
+  - [Tracing support in Rails](#tracing-support-in-rails)
 
-## Introduction
+Support for SQLCommenter in Ruby on Rails varies, depending on the version. Select your version of Rails below to enable SQLCommenter.
+
+## Rails 7.1 and up
+
+SQLCommenter is supported by default. Enable [query_log_tags](https://guides.rubyonrails.org/configuring.html#config-active-record-query-log-tags-enabled), and SQLCommenter formatting will be [enabled by default](https://edgeguides.rubyonrails.org/configuring.html#config-active-record-query-log-tags-format).
+
+## Rails 7.0
+Enable [query_log_tags](https://guides.rubyonrails.org/configuring.html#config-active-record-query-log-tags-enabled) and install the [PlanetScale SQLCommenter gem](https://github.com/planetscale/activerecord-sql_commenter#installation) for SQLCommenter support.
+
+
+## Rails 6.1 and under
 
 [sqlcommenter_rails](https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/ruby/sqlcommenter-ruby/sqlcommenter_rails) adds comments to your SQL statements.
 
@@ -22,14 +36,16 @@ comments if you use the [opencensus gem].
 [sqlcommenter_rails](https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/ruby/sqlcommenter-ruby/sqlcommenter_rails) configures [marginalia](https://github.com/basecamp/marginalia) and [marginalia-opencensus](https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/ruby/sqlcommenter-ruby/marginalia-opencensus) to
 match the SQLCommenter format.
 
-## Installation
+Compared to newer versions of Rails, this method requires additional work because you will have to install a fork of the [marginalia](https://github.com/basecamp/marginalia/) gem, which has since been consolidated into newer versions of Rails (7.0 and up).
+
+### Installation
 
 Currently, this gem is not released on rubygems. But can be installed from source.
 
-The gem requires functionality provided by an [open PR](https://github.com/basecamp/marginalia/pull/89) to [marginalia](https://github.com/basecamp/marginalia). Install the PR by cloning [glebm's fork of marginalia](https://github.com/glebm/marginalia) one directory above this folder.
+The gem requires functionality provided by an [open PR](https://github.com/basecamp/marginalia/pull/130) to [marginalia](https://github.com/basecamp/marginalia). Install the PR by cloning [modulitos' fork of marginalia](https://github.com/modulitos/marginalia) one directory above this folder.
 
 ```shell
-git clone https://github.com/glebm/marginalia.git ../marginalia
+git clone https://github.com/modulitos/marginalia.git ../marginalia
 ```
 Add the following lines to your application's Gemfile:
 
@@ -49,11 +65,11 @@ To enable [OpenCensus](https://opencensus.io) support, add the [`opencensus`](ht
 require 'opencensus/trace/integrations/rails'
 ```
 
-## Usage
+### Usage
 
 All of the SQL queries initiated by the application will now come with comments!
 
-## Fields
+### Fields
 
 The following fields will be added to your SQL statements as comments:
 
@@ -79,7 +95,7 @@ To include the `traceparent` field, install the [marginalia-opencensus](https://
 
 To change which fields are included, set `Marginalia::Comment.components = [ :field1, :field2, ... ]` in `config/initializers/marginalia.rb` as described in the [marginalia documentation](https://github.com/basecamp/marginalia#components).
 
-## End to end example
+### End to end example
 
 A Rails 6 [sqlcommenter_rails](https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/ruby/sqlcommenter-ruby/sqlcommenter_rails) demo is available at:
 <https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/ruby/sqlcommenter-ruby/sqlcommenter_rails>
@@ -162,11 +178,11 @@ log with the following command:
 tail -f log/development.log | grep 'Post '
 ```
 
-### Results
+#### Results
 
 The demo application has 2 endpoints: `GET /posts` and `POST /posts`.
 
-#### GET /posts
+##### GET /posts
 
 ```shell
 curl localhost:3000/posts
@@ -180,7 +196,7 @@ framework='rails_v6.0.0.rc1',route='/posts',
 traceparent='00-ff19308b1f17fedc5864e929bed1f44e-6ddace73a9debf63-01'*/
 ```
 
-#### POST /posts
+##### POST /posts
 
 ```shell
 curl -X POST localhost:3000/posts -d 'title=my-post'
@@ -194,7 +210,7 @@ framework='rails_v6.0.0.rc1',route='/posts',
 traceparent='00-ff19308b1f17fedc5864e929bed1f44e-6ddace73a9debf63-01'*/
 ```
 
-## References
+### References
 
 | Resource                | URL                                                                                             |
 |-------------------------|-------------------------------------------------------------------------------------------------|
@@ -204,3 +220,8 @@ traceparent='00-ff19308b1f17fedc5864e929bed1f44e-6ddace73a9debf63-01'*/
 | The opencensus gem    | <https://github.com/census-instrumentation/opencensus-ruby >                                      |
 | marginalia-opencensus | <https://github.com/google/sqlcommenter/tree/master/ruby/sqlcommenter-ruby/marginalia-opencensus> |
 
+## Tracing support in Rails
+
+Tracing support has been implemented in the [marginalia-opencensus gem]: https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/main/ruby/sqlcommenter-ruby/marginalia-opencensus. Note that this only works for Rails versions below 7.0, before the [marginalia](https://github.com/basecamp/marginalia/) gem was consolidated into Rails.
+
+Re-purposing that gem for Rails versions >=7.0 should only require minor modifications (contributions are welcome!).

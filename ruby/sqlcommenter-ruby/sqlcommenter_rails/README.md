@@ -1,5 +1,7 @@
 # sqlcommenter_rails
 
+**If you are on Rails version 7.0 and up, refer to the [sqlcommenter-ruby README] instead**
+
 [sqlcommenter] for [Ruby on Rails].
 
 Powered by [marginalia] and [marginalia-opencensus].
@@ -8,16 +10,17 @@ Powered by [marginalia] and [marginalia-opencensus].
 [Ruby on Rails]: https://rubyonrails.org/
 [marginalia]: https://github.com/basecamp/marginalia/
 [marginalia-opencensus]: https://github.com/open-telemetry/opentelemetry-sqlcommenter/tree/master/ruby/sqlcommenter-ruby/marginalia-opencensus
+[sqlcommenter-ruby README]: https://github.com/open-telemetry/opentelemetry-sqlcommenter/blob/main/ruby/sqlcommenter-ruby/README.md
 
 ## Installation
 
 Currently, this gem is not released on rubygems.
 But can be installed from source.
 
-The gem requires functionality provided by an [open PR](https://github.com/basecamp/marginalia/pull/89) to [marginalia](https://github.com/basecamp/marginalia). Install the PR by cloning [glebm's fork of marginalia](https://github.com/glebm/marginalia) one directory above this folder.
+The gem requires functionality provided by an [open PR](https://github.com/basecamp/marginalia/pull/130) to [marginalia](https://github.com/basecamp/marginalia). Install the PR by cloning [modulitos' fork of marginalia](https://github.com/modulitos/marginalia) one directory above this folder.
 
 ```bash
-git clone https://github.com/glebm/marginalia.git ../marginalia
+git clone https://github.com/modulitos/marginalia.git ../marginalia
 ```
 
 Add the following lines to your application's Gemfile:
