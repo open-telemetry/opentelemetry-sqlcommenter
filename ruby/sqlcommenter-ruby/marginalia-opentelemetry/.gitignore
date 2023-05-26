@@ -1,0 +1,18 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+# mac .DS_store
+*.DS_Store
+
+# rspec failure tracking
+.rspec_status
+Gemfile.lock
+/vendor/
+/spec/gemfiles/*.gemfile.lock
+/spec/gemfiles/.bundle/
